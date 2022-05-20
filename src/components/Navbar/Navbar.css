@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+html{
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    color: #FFF;
+    font-weight: 600;
+}
+a:hover {
+    color: #fff;
+
+}
+span.contact-nav-text:hover {
+    color: #eec00d;
+
+}
+.btn-color-products{
+    background-color: #c73337;
+}
+span.about-nav-text:hover {
+    color: #c73337;
+
+}
+span.services-nav-text:hover {
+    color: #3397cb;
+
+}
+.contact-icon-first{
+    margin-top: 10% !important;
+    margin-left: 4%;
+    height: 50px !important;
+}
+.loc-icons{
+    color:#fff;
+    cursor: pointer;
+}
+.social-icons-contact{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.number{
+    font-weight: 600;
+    cursor: pointer;
+}
+.text-fields-contact{
+    height: 35px !important;
+    margin-left: 10%;
+    margin-top: 5%;
+    position: absolute;
+}
+.number-2{
+    margin-top: -4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.contact-div-second{
+    margin-left: 10%;
+}
+.contact-icon-second{
+    margin-left: 4%;
+    height: 50px !important;
+}
+.contact-textField-height{
+    margin-top: -400px;
+}
+.contact-textField-height-third{
+    margin-top: -460px;
+}
+.submitBtn{
+    float: right;
+    width: 165px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    font-family: "Poppins";
+    background: #d0a02b;
+    
+}
+.contact-sbmit-btn{
+    margin-top: -490px !important;
+    position: absolute;
+    margin-left: 380px !important;
+  }
+.contact-icon-third{
+    margin-top: 38%;
+    margin-left: 4%;
+    height: 50px !important;
+}
+.chbk-icons{
+    color: #d0a02b;
+}
+.closeIconX{
+    float: right;
+    cursor: pointer;
+    color: #d0a02b;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+.contact-div1-title{
+    color:#fff;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 8%;
+    font-family: "Poppins", sans-serif;
+}
+.contact-div1-subtitle{
+    color:#fff;
+    font-size: 15px;
+    padding-top: 3px;
+    padding-right: 10%;
+    font-family: "Poppins", sans-serif;
+}
+.border-radius-1 div {
+    border-radius: 10px !important;
+    height: 90vh;
+    padding: 0px;
+}
+.contact-div-first{
+    background: #d0a02b;
+    border-radius: 10px;
+    height: 89.7vh !important;
+    padding-left: 10% !important;
+}
+border-radius-5 div {
+    border-radius: 0px !important;
+    align-items: center;
+}
+p.loginModalTxt {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #ba7105;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+p.navbar_txt{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 2%;
+}
+.closeIcon{
+    float: right;
+    cursor: pointer;
+}
+p.loginErrorTxt {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    letter-spacing: 0.01em;
+    color: red;
+  }
+.logo{
+    height:30px;
+    width: 60px;
+    border-radius: 7px;
+}
+.side-bar{
+    display: none;
+    color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+    .side-bar{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        font-size: 1.8rem;
+        cursor: pointer;
+        justify-content: flex-start;
+    }	
+    .sidebar-icon{
+        margin-left: 4%;
+        height: 22px;
+        width: 30px;
+    }
+}
+.divider-Margin{
+    margin-top: 3%;
+}

@@ -1,0 +1,23 @@
+.menu-logo {
+    width: 160px;
+    margin-top:12%;
+    margin-left:5%;
+    margin-bottom: 12%;
+ }
+ .menu-item {
+     margin-top:3px; 
+     margin-bottom:3px;
+ }
+ .btn {
+     background-color: transparent;
+     border: 0px solid;
+     color: #fff !important;
+     font-size: 14px !important;
+     padding-left: -50px;
+ }
+ .btn:hover{
+     color: #ba7105 !important;
+ } 
+ .submenu-dot {
+     margin-right: 14px;
+ }
