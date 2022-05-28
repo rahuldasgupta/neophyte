@@ -257,7 +257,7 @@ class Navbar extends React.Component {
                     />
                 </Col>
                 <Col>
-                  <a href="http://localhost:3000/">
+                  <a href="https://neophyte-site.netlify.app/">
                     <img
                       alt="logo"
                       src={logo}
@@ -269,17 +269,17 @@ class Navbar extends React.Component {
             }
           </div>
           <NavMenu>
-            <div style={{ marginRight: "9%", marginLeft:"2%" }}>
-              <a href="http://localhost:3000/about"><span className="about-nav-text">About</span></a>
+            <div style={{ marginRight: "11%", marginLeft:"3%" }}>
+              <a href="https://neophyte-site.netlify.app/about"><span className="about-nav-text">About</span></a>
             </div>
             <NavLink to="/services" style={{ marginRight: "7.4%" }}>
-              <span className="services-nav-text">Partners</span>
+              <span className="services-nav-text">Blogs</span>
             </NavLink>
             {localStorage.getItem("userData") ? (
               <p
                 className="navbar_txt"
                 onClick={this.openModal}
-                style={{ marginLeft: "5%", marginRight: "7%" }}
+                style={{ marginLeft: "5%", marginRight: "8.1%" }}
               >
                 Request
               </p>
@@ -287,12 +287,12 @@ class Navbar extends React.Component {
               <p
                 className="navbar_txt"
                 onClick={this.openModal}
-                style={{ marginRight: "7.4%" }}
+                style={{ marginRight: "8.1%" }}
               >
                 Contact
               </p>
             )}
-            <a href="http://localhost:3000/">
+            <a href="https://neophyte-site.netlify.app/">
               <img alt="logo" src={logo} style={{ height: 35, width: 150 }} />
             </a>
             <NavLink to="/contact" style={{ marginRight: "7.4%", marginLeft: "7.4%",  }}>
@@ -308,7 +308,7 @@ class Navbar extends React.Component {
               </p>
             ) : (
               <NavLink to="/register" style={{ marginRight: "7.4%" }}>
-                Blogs
+                AmIWare
               </NavLink>
             )}
             {localStorage.getItem("userData") ? (

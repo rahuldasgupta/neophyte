@@ -571,6 +571,16 @@ p.choosePayment {
   margin-right: 6%;
   margin-bottom: 5%;
 }
+.vision-txt-margin{
+  margin-bottom: 5%;
+}
+p.vision-para{
+  text-align: right;
+  font-size: 16px;
+  margin-top: 5%;
+  font-weight: 500;
+  color: #222;
+}
 .sc-hm-one-products {
   padding-top: 4%;
   height: 115vh;
@@ -582,7 +592,7 @@ p.choosePayment {
 .others{
   background-color: #f9f9f9
 }
-.why-us {
+.why-us-about {
   margin-top: 4%;
   height: 112vh;
   background-color: #d0a02b;
@@ -616,14 +626,60 @@ p.useCase-title{
   width: 140px;
   cursor: pointer;
 }
-.why-us-info {
-  margin-top: 4%;
-  background-color: #d0a02b;
+p.timeline-year{
+  color: #222;
+  font-weight: bold;
+  font-size: 17px;
+}
+.timeline-tag{
+  color: #222;
+  font-size: 12.5px;
+}
+.timeline-icon{
+  color: #fff
+}
+.why-us-about-inner {
+  padding-top: 8%;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 112vh;
+}
+.img-down{
+  margin-top: 17%;
 }
 .useCases-div{
   height: 95vh;
 }
-
+.office-imgs{
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+.team-imgs{
+  height: 240px!important;
+  object-fit: cover;
+  width: 250px !important;
+  border-radius: 8px;
+}
+.team-univ-imgs{
+  height: 45px !important;
+  width: 180px !important;
+  object-fit: cover;
+  margin-top: -5px;
+}
+.team-univ-imgs-universita{
+  height: 46px !important;
+  width: 136px !important;
+  object-fit: cover;
+  margin-top: -5px;
+}
+.team-univ-imgs-madras{
+  height: 45px !important;
+  width: 130px !important;
+  object-fit: cover;
+  margin-top: -5px;
+}
 .sc-hm-one-in-about {
   top: 0;
   left: 0;
@@ -808,21 +864,23 @@ p.txt_.Title.Second {
   line-height: 35px;
   margin-bottom: 48px;
 }
-button.visit-site-about {
-  width: 160px;
+.nextIconX{
+  color: #fff;
+  float: left;
+  margin-top: 2px;
+}
+button.visit-site-about-team {
+  width: 275px;
   height: 40px;
-  color: white;
-  font-size: 16px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
   font-family: "Poppins";
-  background: radial-gradient(
-    214.91% 214.91% at 56.12% 50.88%,
-    #d3ad40 0%,
-    rgba(211, 173, 64, 0) 100%
-  );
-  filter: drop-shadow(5px 10px 7px rgba(255, 243, 243, 0.25));
-  border-radius: 20px;
-  margin-bottom: 17px;
-  margin-top: 10px;
+  background: rgba(156, 112, 5, 0.8);
+  
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 45%;
 }
 button.requestQuote {
   width: 185px;
@@ -835,6 +893,28 @@ button.requestQuote {
   background: #d0a02b;
   margin-left: 20px;
 }
+button.visit-site-about {
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  font-family: "Poppins";
+  background: radial-gradient(
+    214.91% 214.91% at 56.12% 50.88%,
+    #d3ad40 0%,
+    rgba(211, 173, 64, 0) 100%
+  );
+  filter: drop-shadow(5px 10px 7px rgba(255, 243, 243, 0.25));
+  border-radius: 45px;
+  margin-bottom: 17px;
+  margin-top: 6px;
+}
+p.quote-txt{
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
 .aln-hm-cn {
   float: right;
   margin-top: 22px;
@@ -844,7 +924,13 @@ button.requestQuote {
   margin-top: -25px;
   margin-left: 92px;
 }
-/* about us*/
+.quote-right-img{
+  height: 70px;
+  width: 70px;
+  float: right;
+  margin-top: -35px;
+
+}
 
 .container-cmmon {
   padding-left: 12px;
@@ -1109,19 +1195,29 @@ h1, h2, h3, h5 {
   width: 30em;
 }
 
-.cards {
+.cards-about-team {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  border-radius: 20px;
 }
-
-.card {
+p.team-text-title{
+  color: #222 !important;
+  text-align: center !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  margin-top: 4%;
+}
+.team-text-subtitle{
+  color: #222 !important;
+  text-align: center !important;
+  font-size: 16.5px !important;
+  margin-top: -18px;
+}
+.card-about-team {
   background: #fff;
-  width: 26em;
-  border-radius: 0.9em;
-  margin: 5px;
-  border-radius: 20px;
+  height: 24.3em;
+  margin: 10px !important;
+  border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
@@ -1145,14 +1241,18 @@ h1, h2, h3, h5 {
   font-size: 28px;
   margin-top: 10px;
 }
-.why-midSide-div2-title{
+.more-team-txt{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.why-midSide-div2-title-about{
   color:#fff;
+  margin-bottom: 4%;
   font-weight: 600;
   font-size: 40px;
-  margin-top: 10px;
-  margin-top: 23%;
-  padding-left: 10%;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 .about-midSide-div2-para{
   color:#878787;
@@ -1195,12 +1295,9 @@ h1, h2, h3, h5 {
   margin-top: 4.5%;
   text-align: center;
 }
-.card:hover {
-  transform: scale(1.03);
+.card-about-team:hover {
+  transform: scale(1.07);
   box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
-}
-.card-body:hover{
-  background: #3aa7e1;
 }
 .card-body-2:hover{
   background: #f9464a;
@@ -1209,14 +1306,14 @@ h1, h2, h3, h5 {
   background: #f1cc3d;
 }
 
-.card img {
+.card-about-team img {
   width: 45px;
   height: 45px;
   object-fit: cover;
   margin-left: 1px;
 }
 
-.card h2 {
+.card-about-team h2 {
   color: #fff;
   margin-top: 0.5em;
   line-height: 1.4;
@@ -1241,7 +1338,7 @@ span.card-third-span{
   color: #f1cc3d;
   font-weight: 600;
 }
-.card p {
+.card-about-team p {
   color: #fff;
   text-align: left;
   font-size: 13.5px;
@@ -1257,9 +1354,12 @@ span.card-third-span{
   text-transform: uppercase;
 }
 
-.card-body {
-  padding: 1.2em;
-  background: #3b3b3b;
+.card-body-about-team {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  border-radius: 8px;
+  background: #E3E3E3;
 }
 .card-body-2 {
   padding: 1.2em;

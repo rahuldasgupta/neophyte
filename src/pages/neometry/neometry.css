@@ -588,6 +588,33 @@ p.choosePayment {
   height: 112vh;
   background-color: #f8f8f8;
 }
+.why-us-neo-2{
+  margin-top: 4%;
+  height: 112vh;
+  background-color: #d3ad40;
+}
+.why-us-neo-2-inner{
+  padding-top: 35%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+p.why-us-neo-2-inner-txt{
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.neometry_div2_1{
+  background-repeat: no-repeat, repeat;
+  background-position: right top;
+  background: url("../../assets/machine.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 112vh;
+}
 .neometry_div_1{
   background-repeat: no-repeat, repeat;
   background-position: right top;
@@ -1701,4 +1728,14 @@ video {
   color: #fff;
 }
 
-
+.explore-next-div{
+  margin-top: 100vh !important;
+  margin-left: 30%;
+  width: 280px;
+  position: absolute;
+}
+p.explore-more-txt{
+  color: #d0a02b;
+  margin-top: -3px;
+  font-weight: 600;
+}

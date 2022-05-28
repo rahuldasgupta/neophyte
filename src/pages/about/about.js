@@ -7,34 +7,46 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Zoom from 'react-reveal/Zoom';
-import { BiCheck } from "react-icons/bi";
+import { FaRegBuilding } from "react-icons/fa";
+import { AiOutlineSetting, AiOutlineSafety } from "react-icons/ai";
+import { BsPeopleFill, BsArrowRightCircle } from "react-icons/bs";
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import Typography from '@mui/material/Typography';
 import 'react-multi-carousel/lib/styles.css';
 
 //Images
-import team from "../../assets/team.png";
-import product from "../../assets/product.png";
-import settings from "../../assets/settings.png";
-import sample_stock from "../../assets/sample_stock.jpg";
-import play from "../../assets/play.png";
-import clients from "../../assets/clients.jpg";
-import next from "../../assets/next.png";
-import trust from "../../assets/trust.png";
-import rating from "../../assets/rating.png";
-import badge from "../../assets/badge.png";
-import sentinel from "../../assets/sentinel.jpg";
-import neometry from "../../assets/neometry.jpg";
-import amiware from "../../assets/amiware.jpg";
+import quote_left from "../../assets/quote-left.png";
+import quote_right from "../../assets/quote-right.png";
 import signature from "../../assets/signature.png";
-import warehouse_1 from "../../assets/warehouse_1.jpg";
-import warehouse_2 from "../../assets/warehouse_2.jpg";
+import office_1 from "../../assets/office_1.jpg";
+import office_2 from "../../assets/office_2.jpg";
+import office_3 from "../../assets/office_3.png";
+import office_4 from "../../assets/office_4.png";
+import anurag from "../../assets/team/anurag.png";
+import hongkong from "../../assets/team/hongkong.png";
+import abhinav from "../../assets/team/abhinav.png"; 
+import universita from "../../assets/team/universita.png";
+import pranjal from "../../assets/team/pranjal.JPG"; 
+import madras from "../../assets/team/madras.webp";
 
 class about extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sentinel: true,
-      neometry: false
+      team: false,
+      leaders: true,
+      switchView: true
     };
+    this.changeView = this.changeView.bind(this);
+  }
+  changeView() {
+    this.setState({ switchView: !this.state.switchView });
   }
   render() {
     return (
@@ -69,259 +81,301 @@ class about extends React.Component {
                 </div>
               </div>
               <div className="content-box div2" id="about-div2-info">
-                <Row>
-                  <Col md={3}>
-                    <Zoom right cascade>
-                      <p className="services-top-title">What We<br/>Care</p>
-                    </Zoom>
-                  </Col>
-                  <Col md={3}>
-                    <div className='cards'>
-                      <div className="card">
-                        <div className="card-body">
-                        <img src={team}/>
-                          <h2>People</h2>
-                          <p className="careCards_txt">Human-Computer-Interaction interface for the warehouse manager to set custom rules across processes & live updates of compilance vioations, anomolies and deviations of tracked KPIs from optimal benchmarks</p>
-                        </div>
-                      </div>
-                    </div> 
-                  </Col>
-                  <Col md={3}>
-                    <div className='cards'>
-                      <div className="card">
-                        <div className="card-body-2">
-                        <img src={product}/>
-                          <h2>Product</h2>
-                          <p className="careCards_txt">Employ "mesasure-once and managed throughtout" philosophy for the product's inbound to outbound journey within the warehouse & optimizes packing material requirements, and early detection of damages</p>
-                        </div>
-                      </div>
-                    </div> 
-                  </Col>
-                  <Col md={3}>
-                    <div className='cards'>
-                      <div className="card">
-                        <div className="card-body-3">
-                        <img src={settings}/>
-                          <h2>Process</h2>
-                          <p className="careCards_txt">Harnesse existing IOT sensor infrastructure as an input to our Context and Task Aware Engine - AmiWare, which seamlessly integrates with and updates WMS (Warehouse Management System) and Warehouse Control System</p>
-                        </div>
-                      </div>
-                    </div> 
-                  </Col>
-                </Row>
-                <br/><br/>
-                <Row>
-                  <Col md={6}>
-                    <img src={sample_stock} className="stock_img"/>
-                  </Col>
-                  <Col md={6}>
-                    <img src={play} className="play_img"/>
-                    <p className="about-midSide-div2">Affordable Pricing, Certified Forwarders</p>
-                    <p className="about-midSide-div2-title">Safe, Reliable and Optimal Warehouse Sorting Solutions That Saves Your Time!</p>
-                    <p className="about-midSide-div2-para">We pride ourselves on providing one of the best in class warehouse solutions that ranges from optimizing packing material requirements, fleet management decision making, and early detection of damages to providing seemless connectivity with WMS and WCS.</p>
-                    <img src={signature} style={{width: 170, height: 50}}/>
-                    <button
-                      className="requestQuote"
-                    >
-                      Request Quote
-                    </button>
-                  </Col>
-                </Row>
-                
+                <div>
+                  <p className="services-top-title">Our startup story</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <img src={quote_left} style={{height: 70, width: 70}}/>
+                  <Row>
+                    <Col md={1}></Col>
+                    <Col md={11}>
+                      <p className="quote-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since a very long time.</p>
+                    </Col>
+                    <Col md={1}></Col>
+                  </Row>
+                  <img src={quote_right} className="quote-right-img"/>
+                  <img src={signature} style={{width: 170, height: 50, marginLeft:"9%"}}/>
+                </div>
               </div>
             </div>
-            <div className="why-us">
-              <Row>
-                <Col md={6}>
-                  <div className="why-us-info">
-                    <img src={next} className="next-img"/>
-                    <p className="why-midSide-div2-title">Why Choose Us</p>
-                    <p className="why-midSide-div2-para">We believe that the products, offered by our company, should satify the higher expectations of our clients. We are dedicated in creating added value for our customers by implementing high-end optimized technology in our work. This is why the desire of constant improvement is the driving force behind our organization.</p>
-                    <p className="why-midSide-div2-para">We have been providing high-edge technology warehouse solution at the fair pricing. Our skilled team, 24x7 Client Support, Context and Task Aware Enginer AmiWare, combined with years of experience.</p>
-                    <div className="badges-div">
-                      <Row>
-                        <Col md={4} sm={4} xs={4}>
-                          <center>
-                            <img src={trust} style={{height: 65, width: 65}}/>
-                            <p className="badge-txt">Trusted by 4 Clients Worldwide</p>
-                          </center>
+            {
+              this.state.switchView ?
+                <div className="why-us-about">
+                  <div className="why-us-about-inner">
+                    <p className="why-midSide-div2-title-about">The Leadership</p>
+                    <Row>
+                      <Col md={4}>
+                        <div className='cards-about-team'>
+                          <div className="card-about-team">
+                            <div className="card-body-about-team">
+                              <center><img src={anurag} className="team-imgs"/></center>
+                            </div>
+                            <p className="team-text-title">Anurag S.</p>
+                            <p className="team-text-subtitle">Co-Founder & CEO</p>
+                            <center><img src={hongkong} className="team-univ-imgs"/></center>
+                          </div>
+                        </div>
+                      </Col>
+                      <Col md={4}>
+                        <div className='cards-about-team'>
+                          <div className="card-about-team">
+                            <div className="card-body-about-team">
+                              <center><img src={abhinav} className="team-imgs"/></center>
+                            </div>
+                            <p className="team-text-title">Dr. Abhinav Anand</p>
+                            <p className="team-text-subtitle">Co-Founder & CEO</p>
+                            <center><img src={universita} className="team-univ-imgs-universita"/></center>
+                          </div>
+                        </div>
+                      </Col>
+                      <Col md={4}>
+                        <div className='cards-about-team'>
+                          <div className="card-about-team">
+                            <div className="card-body-about-team">
+                              <center><img src={pranjal} className="team-imgs"/></center>
+                            </div>
+                            <p className="team-text-title">Pranjal Bhaskare</p>
+                            <p className="team-text-subtitle">VP Engineering</p>
+                            <center><img src={madras} className="team-univ-imgs-madras"/></center>
+                          </div>
+                        </div>
+                      </Col>
+                    </Row>
+                    <div>
+                      <Row >
+                        <Col md={8}>
                         </Col>
-                        <Col md={4} sm={4} xs={4}>
-                          <center>
-                            <img src={rating} style={{height: 65, width: 65}}/>
-                            <p className="badge-txt">Rated 4.2/5 on<br/>TrustPilot</p>
-                          </center>
-                        </Col>
-                        <Col md={4} sm={4} xs={4}>
-                          <center>
-                            <img src={badge} style={{height: 65, width: 65}}/>
-                            <p className="badge-txt">An ISO Certified & Govt Registered Company</p>
-                          </center>
+                        <Col md={4}>
+                          <button
+                            className="visit-site-about-team"
+                            onClick={this.changeView}
+                          >
+                            <Row>
+                              <Col md={10}>
+                                <p>
+                                  Meet The Team Behind
+                                </p>
+                              </Col>
+                              <Col md={2}>
+                                <BsArrowRightCircle
+                                  size={22}
+                                  className="nextIconX"
+                                />
+                              </Col>
+                            </Row>
+                          </button>
                         </Col>
                       </Row>
                     </div>
-                    
                   </div>
-                </Col>
-                <Col md={6}>
-                  <img src={warehouse_1} className="warehouse-img-1"/>
-                </Col>
-              </Row>
-            </div>
-            <div className="sc-hm-one-products">
-              <Zoom left cascade>
-                  <p className="txt_products">Our Products</p> 
-              </Zoom>
-              <p className="product-subTitle">We provide complete warehouse monitoring and conveyour sorting solutions.</p>
-              <div className="carousel-div">
-                <Row>
-                  <Col md={4}>
-                    <div className="page-container">
-                        <BlogCard cardImage={neometry} cardText={"NeoMetry"}/>
-                    </div>
-                  </Col>
-                  <Col md={4}>
-                    <div className="page-container">
-                        <BlogCard cardImage={sentinel} cardText={"Sentinel"}/>
-                    </div>
-                  </Col>
-                  <Col md={4}>
-                    <div className="page-container">
-                        <BlogCard cardImage={amiware} cardText={"AmIWare"}/>
-                    </div>
-                  </Col>
-                </Row>
-              </div>
-            </div>
-            <div className="sc-hm-one-products">
-              <Row>
-                <Col md={6}>
-                  <img src={clients} className="clients-img"/>
-                    <p className="about-midSide-div2">Warehouse Management and OCR Solutions</p>
-                    <p className="about-midSide-div2-title useCase-title">Competitive Advantages and Use Cases</p>
-                    <p className="about-midSide-div2-para">We pride ourselves on providing one of the best in class warehouse solutions that ranges from optimizing packing material requirements, fleet management decision making, and early detection of damages to providing seemless connectivity with WMS and WCS.</p>
-                    <Row>
-                      <Col>
-                        <Row>
-                          <div>
-                            <BiCheck
-                              size={30}
-                              className="closeIcon"
-                            />
-                            <span className="pricing-span">Transparent & Fair Pricing Plans</span>
+                </div>
+              :
+              <div className="why-us-about">
+                <div className="why-us-about-inner">
+                  <p className="why-midSide-div2-title-about">The Team Behind</p>
+                  <Row>
+                    <Col md={4}>
+                      <div className='cards-about-team'>
+                        <div className="card-about-team">
+                          <div className="card-body-about-team">
+                            <center><img src={anurag} className="team-imgs"/></center>
                           </div>
-                        </Row>
-                        <Row>
-                          <div>
-                            <BiCheck
-                              size={30}
-                              className="closeIcon"
-                            />
-                            <span className="pricing-span">24x7 Clients Support</span>
+                          <p className="team-text-title">Anurag S.</p>
+                          <p className="team-text-subtitle">Co-Founder & CEO</p>
+                          <center><img src={hongkong} className="team-univ-imgs"/></center>
+                        </div>
+                      </div>
+                    </Col>
+                    <Col md={4}>
+                      <div className='cards-about-team'>
+                        <div className="card-about-team">
+                          <div className="card-body-about-team">
+                            <center><img src={abhinav} className="team-imgs"/></center>
                           </div>
-                        </Row>
-                        <Row>
-                          <div>
-                            <BiCheck
-                              size={30}
-                              className="closeIcon"
-                            />
-                            <span className="pricing-span">Real Time High-Value Cage Area Monitoring</span>
+                          <p className="team-text-title">Dr. Abhinav Anand</p>
+                          <p className="team-text-subtitle">Co-Founder & CEO</p>
+                          <center><img src={universita} className="team-univ-imgs-universita"/></center>
+                        </div>
+                      </div>
+                    </Col>
+                    <Col md={4}>
+                      <div className='cards-about-team'>
+                        <div className="card-about-team">
+                          <div className="card-body-about-team">
+                            <center><img src={pranjal} className="team-imgs"/></center>
                           </div>
-                        </Row>
-                        <Row>
-                          <div>
-                            <BiCheck
-                              size={30}
-                              className="closeIcon"
-                            />
-                            <span className="pricing-span">Damage & Quality Accessment</span>
-                          </div>
-                        </Row>
+                          <p className="team-text-title">Pranjal Bhaskare</p>
+                          <p className="team-text-subtitle">VP Engineering</p>
+                          <center><img src={madras} className="team-univ-imgs-madras"/></center>
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
+                  <div>
+                    <Row >
+                      <Col md={8}>
+                      </Col>
+                      <Col md={4}>
                         <button
-                          className="requestQuote"
-                          style={{marginTop: "4%"}}
+                          className="visit-site-about-team"
+                          onClick={this.changeView}
                         >
-                          More About Us
+                          <Row>
+                            <Col md={10}>
+                              <p>
+                                Meet The Leaders
+                              </p>
+                            </Col>
+                            <Col md={2}>
+                              <BsArrowRightCircle
+                                size={22}
+                                className="nextIconX"
+                              />
+                            </Col>
+                          </Row>
                         </button>
                       </Col>
                     </Row>
-                </Col>
-                <Col md={6}>
-                  <img src={warehouse_2} className="warehouse-img-2"/>
-                </Col>
-              </Row>
-            </div>
-            <div className="contact-section-home">
-              <Row>
-                <Col md={8}>
-                </Col>
-                <Col md={4}>
-                  <div className="form-e">
-                    <p className="send-mssge">Send Message</p>
-                    <form>
-                      <div className="form-container">
-                        <p className="ct-frm-lbl">Name :</p>
-                        <input
-                          className="in-cus-ct input_"
-                          type="text"
-                          placeholder="Name"
-                          enterKeyHint="next"
-                        />
-
-                        <p id="marginInputs" className="ct-frm-lbl">
-                          Email :
-                        </p>
-
-                        <input
-                          className="in-cus-ct input_"
-                          type="text"
-                          placeholder="Email"
-                          inputMode="email"
-                          enterKeyHint="next"
-                        />
-
-                        <p id="marginInputs" className="ct-frm-lbl">
-                          Phone Number :
-                        </p>
-
-                        <input
-                          className="in-cus-ct input_"
-                          type="tel"
-                          placeholder="Phone Number"
-                        />
-
-                        <p id="marginInputs" className="ct-frm-lbl">
-                          Message :
-                        </p>
-
-                        <input
-                          className="in-cus-ct messageInput"
-                          type="text"
-                          placeholder="Message"
-                        ></input>
-                      </div>
-                      <Row>
-                        <Col
-                          style={{ marginTop: "4%", marginBottom: "3%" }}
-                        >
-                          <center>
-                            <button
-                              style={{ borderRadius: 60 }}
-                              type="submit"
-                            >
-                              Submit
-                            </button>
-                          </center>
-                        </Col>
-                      </Row>
-                    </form>
                   </div>
+                </div>
+              </div>
+            }
+            <div className="sc-hm-one-products">
+              <Zoom left cascade>
+                  <p className="txt_products">Our Workspace</p> 
+              </Zoom>
+              <p className="product-subTitle">The place where all the great and creative minds of Neophyte collaborate.</p>
+              <div className="carousel-div">
+                <Row>
+                  <Col md={3} xs={3} sm={3}>
+                    <div className="page-container">
+                      <img src={office_1} className="office-imgs img-down"/>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={3} sm={3}>
+                    <div className="page-container">
+                      <img src={office_2} className="office-imgs"/>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={3} sm={3}>
+                    <div className="page-container">
+                      <img src={office_3} className="office-imgs img-down"/>
+                    </div>
+                  </Col>
+                  <Col md={3} xs={3} sm={3}>
+                    <div className="page-container">
+                        <img src={office_4} className="office-imgs"/>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </div>
+            <div className="sc-hm-one-products">
+              <p className="txt_products vision-txt-margin">Vision & Journey</p>
+              <Row>
+                <Col md={4}>
+                  <Timeline position="alternate">
+                    <TimelineItem>
+                      <TimelineOppositeContent
+                        sx={{ m: 'auto 0', fontSize: 15, fontWeight:"bold" }}
+                        align="right"
+                        variant="body2"
+                        color="text.secondary"
+                      >
+                        2021
+                      </TimelineOppositeContent>
+                      <TimelineSeparator>
+                        <TimelineConnector />
+                        <TimelineDot color="primary">
+                          <FaRegBuilding />
+                        </TimelineDot>
+                        <TimelineConnector />
+                      </TimelineSeparator>
+                      <TimelineContent sx={{ py: '15px', px: 2 }}>
+                        <Typography variant="h6" component="span">
+                          Founded
+                        </Typography>
+                        <Typography
+                          sx={{ fontSize: 13, }}
+                        >
+                          Neophyte Incorporated
+                        </Typography>
+                      </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                      <TimelineOppositeContent
+                        sx={{ m: 'auto 0', fontSize: 15, fontWeight:"bold" }}
+                        variant="body2"
+                        color="text.secondary"
+                      >
+                        2022
+                      </TimelineOppositeContent>
+                      <TimelineSeparator>
+                        <TimelineConnector />
+                        <TimelineDot color="error">
+                          <AiOutlineSetting />
+                        </TimelineDot>
+                        <TimelineConnector />
+                      </TimelineSeparator>
+                      <TimelineContent sx={{ py: '12px', px: 2 }}>
+                        <Typography variant="h6" component="span">
+                          Neometry
+                        </Typography>
+                        <Typography
+                          sx={{ fontSize: 13, }}
+                        >
+                          R&D and Product Launch 
+                        </Typography>
+                      </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                      <TimelineSeparator>
+                        <TimelineConnector />
+                        <TimelineDot color="warning">
+                          <AiOutlineSafety className="timeline-icon"/>
+                        </TimelineDot>
+                        <TimelineConnector />
+                      </TimelineSeparator>
+                      <TimelineContent sx={{ py: '12px', px: 2 }}>
+                        <Typography variant="h6" component="span">
+                          Sentinel
+                        </Typography>
+                        <Typography
+                          sx={{ fontSize: 13, }}
+                        >
+                          Product Launch 
+                        </Typography>
+                      </TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                      <TimelineSeparator>
+                        <TimelineConnector/>
+                        <TimelineDot color="success">
+                          <BsPeopleFill />
+                        </TimelineDot>
+                        <TimelineConnector />
+                      </TimelineSeparator>
+                      <TimelineContent sx={{ py: '12px', px: 2 }}>
+                        <Typography variant="h6" component="span">
+                          Client
+                        </Typography>
+                        <Typography
+                          sx={{ fontSize: 13, }}
+                        >
+                          Provided solutions for ABC (P) Ltd
+                        </Typography>
+                      </TimelineContent>
+                    </TimelineItem>
+                  </Timeline>
+                </Col>
+                <Col md={1}></Col>
+                <Col md={7}>
+                  <p className="vision-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <p className="vision-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </Col>
               </Row>
             </div>
           </div>
-            
         <Footer />
       </div>
     );

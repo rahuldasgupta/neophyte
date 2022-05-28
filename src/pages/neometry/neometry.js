@@ -11,23 +11,21 @@ import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
 import { BiCheck } from "react-icons/bi";
 import 'react-multi-carousel/lib/styles.css';
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsArrowRightCircle } from "react-icons/bs";
 
 
 //Images
-import neometry_screen_1 from "../../assets/neometry_screen_2.jpg";
+import neometry_screen_1 from "../../assets/neometry_screen_4.png";
 import neo_icon_1 from "../../assets/neo_icon_1.png";
 import clients from "../../assets/clients.jpg";
-import neometry from "../../assets/neometry.png";
-import sentinel from "../../assets/sentinel.jpg";
 import neometry_video from "../../assets/neometry_video.mp4";
-import amiware from "../../assets/amiware.jpg";
-import signature from "../../assets/signature.png";
-import warehouse_1 from "../../assets/warehouse_1.jpg";
 import warehouse_2 from "../../assets/warehouse_2.jpg";
 import neometry_1 from "../../assets/neometry_1.png";
 import neometry_2 from "../../assets/neometry_4.png";
 import neometry_3 from "../../assets/neometry_3.png";
+import no_touch from "../../assets/no-touch.png";
+import ai from "../../assets/ai.png";
+import cartoons from "../../assets/cartoons.png";
 
 const responsive = {
   superLargeDesktop: {
@@ -106,7 +104,7 @@ class neometry_screen extends React.Component {
               </div>
               <div className="content-box div2" id="about-div2-info">
                 <Row>
-                  <Col md={6}>
+                  <Col md={6} sm={12} xs={12}>
                     <p className="about-midSide-div2">Affordable Pricing, Certified Forwarders</p>
                     <p className="about-midSide-div2-title">Our Smart Products Profiler Solutions That Enhances Your Efficiency!</p>
                     <p className="about-midSide-div2-para">We pride ourselves on providing one of the best in class warehouse solutions that ranges from optimizing packing material requirements, fleet management decision making, and early detection of damages to providing seemless connectivity with WMS and WCS.</p>
@@ -117,13 +115,13 @@ class neometry_screen extends React.Component {
                     </button>
                   </Col>
                   <Col md={1}></Col>
-                  <Col md={5}>
+                  <Col md={5} sm={12} xs={12}>
                     <img src={neometry_screen_1} className="stock_img"/>
                     <div class="box-neometry">
                       <img src={neo_icon_1} style={{height: 50, width: 50}}/>
                       <p className="about-midSide-div2-neo">AmIWare Powered Products Profiler & Sorter</p>
                       <BsArrowRight
-                        size={22}
+                        size={20}
                         className="closeIconX"
                       />
                     </div>
@@ -154,8 +152,8 @@ class neometry_screen extends React.Component {
                     <Col md={4}>
                       <div class="box-neometry-2">
                         <div className="box-neometry-2-inner">
-                          <img src={neo_icon_1} style={{height: 50, width: 50}}/>
-                          <p className="box-text-title-2">Fleet Management</p>
+                          <img src={no_touch} style={{height: 50, width: 50}}/>
+                          <p className="box-text-title-2">Low-Touch / No-Touch</p>
                           <p className="box-text-subtitle-2">Neophyte has provided warehouse solutions to over 10 clients across different industries and fields. Warehouse solutions to over 10 clients across different industries</p>
                         </div>
                       </div>
@@ -163,13 +161,36 @@ class neometry_screen extends React.Component {
                   <Col md={4}>
                       <div class="box-neometry-2">
                         <div className="box-neometry-2-inner">
-                          <img src={neo_icon_1} style={{height: 50, width: 50}}/>
-                          <p className="box-text-title-2">Package Optimization</p>
+                          <img src={ai} style={{height: 50, width: 50}}/>
+                          <p className="box-text-title-2">Sustainable AI & ML Vision</p>
                           <p className="box-text-subtitle-2">Neophyte has provided warehouse solutions to over 10 clients across different industries and fields. Warehouse solutions to over 10 clients across different industries</p>
                         </div>
                       </div>
+                      <div className="explore-next-div">
+                        <Row >
+                          <Col md={5}>
+                            <p className="explore-more-txt">Explore more</p>
+                          </Col>
+                          <Col md={1}>
+                            <BsArrowRightCircle
+                              size={22}
+                              className="closeIconX"
+                            />
+                          </Col>
+                        </Row>
+                      </div>
+                      
                   </Col>
-                  
+                  <Col md={4}>
+                      <div class="box-neometry-2">
+                        <div className="box-neometry-2-inner">
+                          <img src={cartoons} style={{height: 52, width: 52}}/>
+                          <p className="box-text-title-2">Fit For All<br/>Box Sizes</p>
+                          <p className="box-text-subtitle-2">Neophyte has provided warehouse solutions to over 10 clients across different industries and fields. Warehouse solutions to over 10 clients across different industries</p>
+                        </div>
+                      </div>
+                      
+                  </Col>
                   </Row>
                 </Col>
               </Row>
@@ -235,6 +256,20 @@ class neometry_screen extends React.Component {
                 </Row>
               </div>
             </div>
+            <div className="why-us-neo-2">
+              <Row>
+                <Col md={4}>
+                  <div className="why-us-neo-2-inner">
+                    <p className="why-us-neo-2-inner-txt">
+                    Measure-once and Managed-throughout philosophy for the product's inbound to outbound journey within the warehouse  resulting in better order fulfillment processing which optimizes packing material requirements, fleet management decision making, and early detection of damages to prevent costs emerging from returned shipments
+                    </p>
+                  </div>
+                </Col>
+                <Col md={8}>
+                <div className="neometry_div2_1"></div>
+                </Col>
+              </Row>
+            </div>
             <div className="sc-hm-one-products">
               <Row>
                 <Col md={6}>
@@ -294,76 +329,7 @@ class neometry_screen extends React.Component {
                 </Col>
               </Row>
             </div>
-            <div className="contact-section-home">
-              <Row>
-                <Col md={8}>
-                </Col>
-                <Col md={4}>
-                  <div className="form-e">
-                    <p className="send-mssge">Send Message</p>
-                    <form>
-                      <div className="form-container">
-                        <p className="ct-frm-lbl">Name :</p>
-                        <input
-                          className="in-cus-ct input_"
-                          type="text"
-                          placeholder="Name"
-                          enterKeyHint="next"
-                        />
-
-                        <p id="marginInputs" className="ct-frm-lbl">
-                          Email :
-                        </p>
-
-                        <input
-                          className="in-cus-ct input_"
-                          type="text"
-                          placeholder="Email"
-                          inputMode="email"
-                          enterKeyHint="next"
-                        />
-
-                        <p id="marginInputs" className="ct-frm-lbl">
-                          Phone Number :
-                        </p>
-
-                        <input
-                          className="in-cus-ct input_"
-                          type="tel"
-                          placeholder="Phone Number"
-                        />
-
-                        <p id="marginInputs" className="ct-frm-lbl">
-                          Message :
-                        </p>
-
-                        <input
-                          className="in-cus-ct messageInput"
-                          type="text"
-                          placeholder="Message"
-                        ></input>
-                      </div>
-                      <Row>
-                        <Col
-                          style={{ marginTop: "4%", marginBottom: "3%" }}
-                        >
-                          <center>
-                            <button
-                              style={{ borderRadius: 60 }}
-                              type="submit"
-                            >
-                              Submit
-                            </button>
-                          </center>
-                        </Col>
-                      </Row>
-                    </form>
-                  </div>
-                </Col>
-              </Row>
-            </div>
-          </div>
-            
+          </div> 
         <Footer />
       </div>
     );

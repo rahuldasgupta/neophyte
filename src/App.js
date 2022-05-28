@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/index';
 import home from "./pages/home/home.js";
 import about from "./pages/about/about.js";
 import neometry_screen from "./pages/neometry/neometry.js";
+import sentinel_screen from "./pages/sentinel/sentinel.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
         <Switch>
           <Route path="/about" component={about} />
           <Route path="/neometry" component={neometry_screen} />
+          <Route path="/sentinel" component={sentinel_screen} />
           <Route exact path="/" component={home} />
         </Switch>
       </Router>
