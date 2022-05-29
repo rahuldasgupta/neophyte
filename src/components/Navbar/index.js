@@ -257,7 +257,7 @@ class Navbar extends React.Component {
                     />
                 </Col>
                 <Col>
-                  <a href="https://neophyte-site.netlify.app/">
+                  <a href="https://neophyte.vercel.app/">
                     <img
                       alt="logo"
                       src={logo}
@@ -270,34 +270,31 @@ class Navbar extends React.Component {
           </div>
           <NavMenu>
             <div style={{ marginRight: "11%", marginLeft:"3%" }}>
-              <a href="https://neophyte-site.netlify.app/about"><span className="about-nav-text">About</span></a>
+              <a href="https://neophyte.vercel.app/about"><span className="about-nav-text">About</span></a>
             </div>
-            <NavLink to="/services" style={{ marginRight: "7.4%" }}>
+            <NavLink to="/services" style={{ marginRight: "8%" }}>
               <span className="services-nav-text">Blogs</span>
             </NavLink>
-            {localStorage.getItem("userData") ? (
               <p
                 className="navbar_txt"
                 onClick={this.openModal}
-                style={{ marginLeft: "5%", marginRight: "8.1%" }}
-              >
-                Request
-              </p>
-            ) : (
-              <p
-                className="navbar_txt"
-                onClick={this.openModal}
-                style={{ marginRight: "8.1%" }}
+                style={{ marginRight: "9%" }}
               >
                 Contact
               </p>
-            )}
-            <a href="https://neophyte-site.netlify.app/">
+            <a href="https://neophyte.vercel.app/">
               <img alt="logo" src={logo} style={{ height: 35, width: 150 }} />
             </a>
-            <NavLink to="/contact" style={{ marginRight: "7.4%", marginLeft: "7.4%",  }}>
-              <span className="contact-nav-text">Products</span>
-            </NavLink>
+            <label class="dropdown">
+              <div class="dd-button">
+                <span className="contact-nav-text">Products</span>
+              </div>
+              <input type="checkbox" class="dd-input" id="test"/>
+              <ul class="dd-menu">
+                <a href="https://neophyte.vercel.app/sentinel"><li>Sentinel</li></a>
+                <a href="https://neophyte.vercel.app/neometry"><li>Neometry</li></a>
+              </ul>
+            </label>
             {localStorage.getItem("userData") ? (
               <p
                 className="navbar_txt"
@@ -311,19 +308,9 @@ class Navbar extends React.Component {
                 AmIWare
               </NavLink>
             )}
-            {localStorage.getItem("userData") ? (
-              <p
-                className="navbar_txt"
-                onClick={this.openModal}
-                style={{ marginLeft: "3%", marginRight: "5%" }}
-              >
-                Logout
-              </p>
-            ) : (
-              <NavLink to="/about" style={{ marginRight: "7.4%", }}>
+            <NavLink to="/about" style={{ marginRight: "7%", }}>
                 Demo
-              </NavLink>
-            )}
+            </NavLink>
           </NavMenu>
         </Nav>
       </>

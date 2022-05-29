@@ -192,3 +192,60 @@ p.loginErrorTxt {
 .divider-Margin{
     margin-top: 3%;
 }
+.dropdown {
+    display: inline-block;
+    position: relative;
+    margin-right: 13%;
+    margin-left: 9%;
+  }
+  
+  .dd-button {
+    display: inline-block;
+    padding: 10px 30px 10px 20px;
+    background-color: rgb(19, 19, 17);
+    cursor: pointer;
+    width: 65px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+  }
+  
+  .dd-input {
+    display: none;
+  }
+  
+  .dd-menu {
+    position: absolute;
+    top: 100%;
+    padding: 0;
+    border-top: 1px solid #fff;
+    margin: 0px 0 0 0;
+    width: 115px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+    background-color: rgb(19, 19, 17);
+    list-style-type: none;
+    color: #fff;
+  }
+  .dd-input + .dd-menu {
+    display: none;
+  } 
+  .dd-input:checked + .dd-menu {
+    display: block;
+  } 
+  .dd-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dd-menu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+  }
+  
+  .dd-menu li.divider{
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+  }

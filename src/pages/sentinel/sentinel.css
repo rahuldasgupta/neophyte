@@ -620,6 +620,14 @@ p.useCase-title{
   float: left;
   color: #d0a02b;
 }
+.senti-hover-card{
+  margin-left: 22%;
+  margin-top: 5%;
+}
+.senti-hover-card2{
+  margin-left: 17%;
+  margin-top: 5%;
+}
 .pricing-span{
   float: left;
   margin-left: 5px;
@@ -763,6 +771,13 @@ p.txt_products-senti {
   margin-top: 20%!important;
   line-height: 60px;
   text-align: right;
+}
+p.txt_products-senti-2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 44px !important;
+  text-align: center;
+  color: #fff !important;
+  padding-bottom: 2.5%;
 }
 p.product-subTitle{
   color: #AAAAAA;
@@ -1256,10 +1271,14 @@ p.team-text-title{
   box-shadow: 0px 5px 5px rgb(74 63 63 / 25%);
 }
 .senti-dashboard2{
-  width: 53vw;
-  margin-left: 25px;
+  width: 54vw;
   object-fit: fit;
-  margin-top: 9%;
+  border-radius: 15px !important;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 5px rgb(74 63 63 / 25%);
+  background: #fff;
+  padding: 18px;
 }
 .senti-dash{
   background: #d3ad40;

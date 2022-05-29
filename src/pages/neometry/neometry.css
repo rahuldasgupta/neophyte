@@ -580,6 +580,13 @@ p.choosePayment {
   padding-left: 7%;
   padding-right: 7%;
 }
+.sc-hm-one-products-neo2 {
+  height: 105vh;
+  background-color: #fff;
+  padding-top: 5%;
+  padding-left: 12%;
+  padding-right: 7%;
+}
 .others{
   background-color: #f9f9f9
 }
@@ -629,10 +636,12 @@ p.why-us-neo-2-inner-txt{
   height: 112vh;
   object-fit:fill;
 }
-.warehouse-img-2{
-  height: 90vh;
-  object-fit:fill;
-  margin-top: 3%;
+.warehouse-img-2-neo{
+  height: 80vh;
+  width: 100%;
+  object-fit:cover;
+  margin-top: 1.5%;
+  border-radius: 5px;
 }
 p.useCase-title{
   margin-top: -10px;
@@ -650,6 +659,14 @@ p.useCase-title{
   position:absolute;
   right: 5% !important;
   margin-top: 25%;
+  height: 180px;
+  width: 140px;
+  cursor: pointer;
+}
+.clients-img-neo{
+  position:absolute;
+  right: 7.7% !important;
+  margin-top: 21%;
   height: 180px;
   width: 140px;
   cursor: pointer;
@@ -1193,6 +1210,12 @@ h1, h2, h3, h5 {
   font-weight: 600;
   font-size: 13.8px;
   margin-top: 22%;
+}
+.about-midSide-div2-abc{
+  color:#d0a02b;
+  font-weight: 600;
+  font-size: 13.8px;
+  margin-top: 16%;
 }
 .about-midSide-div2-neo{
   color:#d0a02b;

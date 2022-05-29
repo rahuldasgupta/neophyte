@@ -6,17 +6,12 @@ import Footer from "../../components/Footer/footer";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { BsArrowRight } from "react-icons/bs";
+import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 //Images
-import neometry_screen_1 from "../../assets/neometry_screen_5.jpg";
-import neo_icon_1 from "../../assets/neo_icon_1.png";
 import senti_flow from "../../assets/senti_flow.png";
 import dashboard from "../../assets/dashboard.png";
-import eye_tracking from "../../assets/eye-tracking.png";
-import damage_box from "../../assets/damage_box.png";
-import attendance from "../../assets/attendance.png";
 import search from "../../assets/search.png";
 import summary from "../../assets/sumary.png";
 import security from "../../assets/security.png";
@@ -26,6 +21,28 @@ import broken from "../../assets/broken.png";
 import tracking from "../../assets/tracking.png";
 import acces_control from "../../assets/acces_control.png";
 import angry from "../../assets/angry.png";
+import machine from "../../assets/machine.png";
+import goal from "../../assets/goal.png";
+import pc from "../../assets/pc.png";
+import steal from "../../assets/steal.png";
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+    paritialVisibilityGutter: 60
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1,
+    paritialVisibilityGutter: 50
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    paritialVisibilityGutter: 30
+  }
+};
 
 class sentinel_screen extends React.Component {
   constructor(props) {
@@ -84,66 +101,43 @@ class sentinel_screen extends React.Component {
                       Request Quote
                     </button>
                   </Col>
-                  <Col md={1}></Col>
-                  <Col md={5}>
-                    <img src={neometry_screen_1} className="stock_img-sentinel"/>
-                    <div class="box-neometry">
-                      <img src={neo_icon_1} style={{height: 50, width: 50}}/>
-                      <p className="about-midSide-div2-neo">AmIWare Powered Products Profiler & Sorter</p>
-                      <BsArrowRight
-                        size={20}
-                        className="closeIconX"
-                      />
+                  <Col md={3}>
+                    <div className="page-container-senti senti-hover-card">
+                        <BlogCard cardImage={machine} cardText={"Attendence Tracker"}/>
+                    </div>
+                    <div className="page-container-senti senti-hover-card">
+                        <BlogCard cardImage={steal} cardText={"Violation Detection"}/>
+                    </div>
+                  </Col>
+                  <Col md={3}>
+                    <div className="page-container-senti senti-hover-card2">
+                        <BlogCard cardImage={goal} cardText={"Workers' Efficiency Monitor"}/>
+                    </div>
+                    <div className="page-container-senti senti-hover-card2">
+                        <BlogCard cardImage={pc} cardText={"High Value Cage Monitor"}/>
                     </div>
                   </Col>
                 </Row>
               </div>
               <div className="senti-dash" id="about-div2-info">
                 <center>
-                  <img src={dashboard} className="senti-dashboard"/>
-                  <Row>
-                    <Col md={3}></Col>
-                    <Col md={2} sm={4} xs={4}>
-                      <center>
-                        <img src={attendance} style={{height: 65, width: 65}}/>
-                        <p className="badge-txt">Attendance Records<br/>Tracker</p>
-                      </center>
-                    </Col>
-                    <Col md={2} sm={4} xs={4}>
-                      <center>
-                        <img src={eye_tracking} style={{height: 65, width: 65}}/>
-                        <p className="badge-txt">Complete Surveillance</p>
-                      </center>
-                    </Col>
-                    <Col md={2} sm={4} xs={4}>
-                      <center>
-                        <img src={damage_box} style={{height: 65, width: 65}}/>
-                        <p className="badge-txt">Damage Violation<br/>Alerts</p>
-                      </center>
-                    </Col>
-                    <Col md={3}></Col>
-                  </Row>
+                  <p className="txt_products-senti-2">Deliver Intelligence On-The-Edge</p>
+                  <Carousel
+                    autoPlay={true}
+                    autoPlaySpeed={1500}
+                    ssr
+                    partialVisible 
+                    itemClass="image-item"
+                    responsive={responsive}
+                  >
+                    <img src={dashboard} className="senti-dashboard"/>
+                    <img src={senti_flow} className="senti-dashboard2"/>
+                  </Carousel>
                 </center>
               </div>
             </div>
-            <div className="sc-hm-one-products-senti">
-              <Row>
-                <Col md={5}>
-                  <p className="txt_products-senti">How Sentinal Helps Your Business</p> 
-                  <p className="senti-midSide-div2-para">Our Ambient Integrated Intelligent Platform perform data understanding through interoperability; learn domain-specific tasks and simulate processes/sun-processes to create custom and domain-specific COTS (commercial off-the-self) AI models which allow to render personalized/customized services based on what process to monitor, interact, optimize, and automate in an environment.</p>
-                  <button
-                    className="requestQuote-senti"
-                  >
-                    Find Out More
-                  </button>
-                </Col>
-                <Col md={7}>
-                  <img src={senti_flow} className="senti-dashboard2"/>
-                </Col>
-              </Row>
-            </div>
             <div className="sc-hm-one-products-senti2">
-              <p className="txt_products vision-txt-margin">Deliver Intelligence On-The-Edge</p>
+              <p className="txt_products vision-txt-margin">How Sentinal Helps Your Business</p>
               <Row>
                 <Col md={3}>
                   <div className="container-senti">
@@ -320,7 +314,6 @@ class Back extends React.Component {
     return (
       <div className="back">
         <p>Profiles people and prevents people-induced loss, non compliance and indiscipline by enhancing existing security and surveillance ecosystem</p>
-        <p>Bloggity bloggity bloggity blog. This would be the full text of the abbreviated blog post.</p>
       </div>
     )
   }

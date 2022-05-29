@@ -270,11 +270,11 @@ class neometry_screen extends React.Component {
                 </Col>
               </Row>
             </div>
-            <div className="sc-hm-one-products">
+            <div className="sc-hm-one-products-neo2">
               <Row>
                 <Col md={6}>
-                  <img src={clients} className="clients-img"/>
-                    <p className="about-midSide-div2">Warehouse Management and OCR Solutions</p>
+                  <img src={clients} className="clients-img-neo"/>
+                    <p className="about-midSide-div2-abc">Warehouse Management and OCR Solutions</p>
                     <p className="about-midSide-div2-title useCase-title">Competitive Advantages and Use Cases</p>
                     <p className="about-midSide-div2-para">We pride ourselves on providing one of the best in class warehouse solutions that ranges from optimizing packing material requirements, fleet management decision making, and early detection of damages to providing seemless connectivity with WMS and WCS.</p>
                     <Row>
@@ -324,8 +324,9 @@ class neometry_screen extends React.Component {
                       </Col>
                     </Row>
                 </Col>
-                <Col md={6}>
-                  <img src={warehouse_2} className="warehouse-img-2"/>
+                <Col md={1}></Col>
+                <Col md={4}>
+                  <img src={warehouse_2} className="warehouse-img-2-neo"/>
                 </Col>
               </Row>
             </div>

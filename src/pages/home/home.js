@@ -26,6 +26,7 @@ import next from "../../assets/next.png";
 import trust from "../../assets/trust.png";
 import rating from "../../assets/rating.png";
 import badge from "../../assets/badge.png";
+import location from "../../assets/location.png";
 import sentinel from "../../assets/sentinel.jpg";
 import neometry from "../../assets/neometry.jpg";
 import amiware from "../../assets/amiware.jpg";
@@ -53,13 +54,19 @@ const responsive = {
   }
 };
 
+
 class home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       switchView: true,
       sentinel: true,
-      neometry: false
+      neometry: false,
+      center: {
+        lat: 59.95,
+        lng: 30.33
+      },
+      zoom: 11
     };
   }
   changeView = () => {
@@ -261,11 +268,11 @@ class home extends React.Component {
                 </Row>
               </div>
             </div>
-            <div className="sc-hm-one-products">
+            <div className="sc-hm-one-products-neo2">
               <Row>
                 <Col md={6}>
-                  <img src={clients} className="clients-img"/>
-                    <p className="about-midSide-div2">Warehouse Management and OCR Solutions</p>
+                  <img src={clients} className="clients-img-neo"/>
+                    <p className="about-midSide-div2-abc">Warehouse Management and OCR Solutions</p>
                     <p className="about-midSide-div2-title useCase-title">Competitive Advantages and Use Cases</p>
                     <p className="about-midSide-div2-para">We pride ourselves on providing one of the best in class warehouse solutions that ranges from optimizing packing material requirements, fleet management decision making, and early detection of damages to providing seemless connectivity with WMS and WCS.</p>
                     <Row>
@@ -276,7 +283,7 @@ class home extends React.Component {
                               size={30}
                               className="closeIcon"
                             />
-                            <span className="pricing-span">Transparent & Fair Pricing Plans</span>
+                            <span className="pricing-span">A.I Product Profiling</span>
                           </div>
                         </Row>
                         <Row>
@@ -285,7 +292,7 @@ class home extends React.Component {
                               size={30}
                               className="closeIcon"
                             />
-                            <span className="pricing-span">24x7 Clients Support</span>
+                            <span className="pricing-span">Optimal Sorting</span>
                           </div>
                         </Row>
                         <Row>
@@ -294,7 +301,7 @@ class home extends React.Component {
                               size={30}
                               className="closeIcon"
                             />
-                            <span className="pricing-span">Real Time High-Value Cage Area Monitoring</span>
+                            <span className="pricing-span">Quality Assesment</span>
                           </div>
                         </Row>
                         <Row>
@@ -303,7 +310,7 @@ class home extends React.Component {
                               size={30}
                               className="closeIcon"
                             />
-                            <span className="pricing-span">Damage & Quality Accessment</span>
+                            <span className="pricing-span">Damage Prevention & Detection</span>
                           </div>
                         </Row>
                         <button
@@ -315,81 +322,13 @@ class home extends React.Component {
                       </Col>
                     </Row>
                 </Col>
-                <Col md={6}>
-                  <img src={warehouse_2} className="warehouse-img-2"/>
-                </Col>
-              </Row>
-            </div>
-            <div className="contact-section-home">
-              <Row>
-                <Col md={8}>
-                </Col>
+                <Col md={1}></Col>
                 <Col md={4}>
-                  <div className="form-e">
-                    <p className="send-mssge">Send Message</p>
-                    <form>
-                      <div className="form-container">
-                        <p className="ct-frm-lbl">Name :</p>
-                        <input
-                          className="in-cus-ct input_"
-                          type="text"
-                          placeholder="Name"
-                          enterKeyHint="next"
-                        />
-
-                        <p id="marginInputs" className="ct-frm-lbl">
-                          Email :
-                        </p>
-
-                        <input
-                          className="in-cus-ct input_"
-                          type="text"
-                          placeholder="Email"
-                          inputMode="email"
-                          enterKeyHint="next"
-                        />
-
-                        <p id="marginInputs" className="ct-frm-lbl">
-                          Phone Number :
-                        </p>
-
-                        <input
-                          className="in-cus-ct input_"
-                          type="tel"
-                          placeholder="Phone Number"
-                        />
-
-                        <p id="marginInputs" className="ct-frm-lbl">
-                          Message :
-                        </p>
-
-                        <input
-                          className="in-cus-ct messageInput"
-                          type="text"
-                          placeholder="Message"
-                        ></input>
-                      </div>
-                      <Row>
-                        <Col
-                          style={{ marginTop: "4%", marginBottom: "3%" }}
-                        >
-                          <center>
-                            <button
-                              style={{ borderRadius: 60 }}
-                              type="submit"
-                            >
-                              Submit
-                            </button>
-                          </center>
-                        </Col>
-                      </Row>
-                    </form>
-                  </div>
+                  <img src={warehouse_2} className="warehouse-img-2-neo"/>
                 </Col>
               </Row>
             </div>
-          </div>
-            
+          </div>      
         <Footer />
       </div>
     );
