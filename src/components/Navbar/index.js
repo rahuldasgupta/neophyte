@@ -20,6 +20,10 @@ import facebook from "../../assets/facebook.png";
 import twitter from "../../assets/twitter.png";
 import linkedin from "../../assets/linkedin.png";
 import instagram from "../../assets/instagram.png";
+import Layer1 from "../../assets/Layer1.svg";
+import Layer2 from "../../assets/layer2.png";
+import Layer3 from "../../assets/layer3.png";
+import amiware_logo from "../../assets/amiware_logo.png";
 import { BsCircle, BsCheckCircleFill } from "react-icons/bs";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -29,9 +33,14 @@ class Navbar extends React.Component {
     super(props);
     this.state = {
       contactModal: false,
+      amiwareModal: false,
       errors: {},
+      introduction: true,
+      technology: false,
+      workflow: false
     };
     this.openModal = this.openModal.bind(this);
+    this.openAmiwareModal = this.openAmiwareModal.bind(this);
   }
   toggleButton = () => {
     this.setState({
@@ -40,6 +49,9 @@ class Navbar extends React.Component {
   };
   openModal() {
     this.setState({ contactModal: !this.state.contactModal });
+  }
+  openAmiwareModal() {
+    this.setState({ amiwareModal: !this.state.amiwareModal });
   }
   successToast() {
     toast.success("Authenticated", {
@@ -229,6 +241,88 @@ class Navbar extends React.Component {
             </div>
           </ModalBody>
         </Modal>
+        <Modal
+          show={this.state.amiwareModal}
+          backdrop="static"
+          keyboard={false}
+          dialogClassName="border-radius-1"
+          centered
+          size="xl"
+        >
+          <ModalBody>
+            <div>
+              <Row>
+                <Col md={4}>
+                  <div className="contact-div-first">
+                    <p className="amiware-div1-title">AmiWare</p>
+                    <p className="amiware-div1-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                    <p onClick={() => this.setState({ introduction: true, technology: false, workflow: false })} className={this.state.introduction ? "amiware-links-title-ami-flipped" : "amiware-links-title"}>Introduction</p>
+                    <p onClick={() => this.setState({ introduction: false, technology: true, workflow: false })} className={this.state.technology ? "amiware-links-title-ami-flipped" : "amiware-links-title"}>Technology</p>
+                    <p onClick={() => this.setState({ introduction: false, technology: false, workflow: true })} className={this.state.workflow ? "amiware-links-title-ami-flipped" : "amiware-links-title"}>Work Flow</p>
+                  </div>
+                </Col>
+                <Col md={8}>
+                  <div className="contact-div-second">
+                    <IoClose
+                      size={30}
+                      className="closeIconX"
+                      onClick={() => this.setState({ amiwareModal: false })}
+                    />
+                    {
+                      this.state.introduction?
+                      <div className="intro-amiware-view">
+                        <center>
+                          <img
+                              src={amiware_logo}
+                              className="amiware_logo-image"
+                          />
+                        </center>
+                        
+                        <img
+                            src={Layer1}
+                            className="layer1-img"
+                        />
+                        <p className="layer1-txt">AmIware improves <span className="amiware-hightlight">Process Visibilty and Automation Management</span> for supply chain ecosystems with intelligent Ambient Machines, leading to minimal people-induced losses and product-linked costs.</p>
+                      </div>
+                      :
+                      <></>
+                    }
+                    {
+                      this.state.technology?
+                        <div className="intro-amiware-view2">
+                          <img
+                              src={Layer2}
+                              className="layer2-img"
+                          />
+                        </div>
+                      :
+                      <></>
+                    }
+                    {
+                      this.state.workflow?
+                        <div className="intro-amiware-view">
+                          <center>
+                            <img
+                                src={amiware_logo}
+                                className="amiware_logo-image"
+                            />
+                          </center>
+                          <p className="layer1-txt">Our <span className="amiware-hightlight">context and task aware engine - AmiWare</span>, Connets with the existing IoT Infrasture & transform them into intelligent Ambient Machines each performing three fundamental operations - Sense, Process and Interact.</p>
+                          <p className="layer1-txt">AmiWare ensures end-to-end monitoring and reporting of processess & sub-processes within the warehouse floor by enabling collaborative HCI between <span className="amiware-hightlight">Ambient Machines</span> and<span className="amiware-hightlight"> Ambient Agents</span> (or workers)</p>
+                          <img
+                              src={Layer3}
+                              className="layer3-img"
+                          />
+                        </div>
+                      :
+                      <></>
+                    }
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </ModalBody>
+        </Modal>
         <Nav>
           <div className="side-bar">
             {
@@ -295,19 +389,13 @@ class Navbar extends React.Component {
                 <a href="https://neophyte.vercel.app/neometry"><li>Neometry</li></a>
               </ul>
             </label>
-            {localStorage.getItem("userData") ? (
-              <p
-                className="navbar_txt"
-                onClick={this.openModal}
-                style={{ marginRight: "7.4%" }}
-              >
-                Notifications
-              </p>
-            ) : (
-              <NavLink to="/register" style={{ marginRight: "7.4%" }}>
-                AmIWare
-              </NavLink>
-            )}
+            <p
+              className="navbar_txt"
+              onClick={this.openAmiwareModal}
+              style={{ marginRight: "8%" }}
+            >
+              AmIWare
+            </p>
             <NavLink to="/about" style={{ marginRight: "7%", }}>
                 Demo
             </NavLink>
