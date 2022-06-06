@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none; /** IE11 */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-right: -20px;
 }
 
 code {
@@ -12,3 +16,9 @@ code {
     monospace;
 }
 ::-webkit-scrollbar {display:none;}
+@-moz-document url-prefix() {
+  html,
+  body {
+    scrollbar-width: none;
+  }
+}

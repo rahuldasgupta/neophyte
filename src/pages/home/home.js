@@ -190,7 +190,6 @@ class home extends React.Component {
                       <img src={sample_stock} className="stock_img"/>
                     </Col>
                     <Col md={6}>
-                      <img src={play} className="play_img"/>
                       <p className="about-midSide-div2">Affordable Pricing, Certified Forwarders</p>
                       <p className="about-midSide-div2-title">Safe, Reliable and Optimal Warehouse Sorting Solutions That Saves Your Time!</p>
                       <p className="about-midSide-div2-para">We pride ourselves on providing one of the best in class warehouse solutions that ranges from optimizing packing material requirements, fleet management decision making, and early detection of damages to providing seemless connectivity with WMS and WCS.</p>
@@ -207,7 +206,6 @@ class home extends React.Component {
               <Row>
                 <Col md={6}>
                   <div className="why-us-info">
-                    <img src={next} className="next-img"/>
                     <Fade top duration={1750}>
                       <p className="why-midSide-div2-title">Why Choose Us</p>
                       <p className="why-midSide-div2-para">We believe that the products, offered by our company, should satify the higher expectations of our clients. We are dedicated in creating added value for our customers by implementing high-end optimized technology in our work. This is why the desire of constant improvement is the driving force behind our organization.</p>
@@ -245,7 +243,7 @@ class home extends React.Component {
             <div className="sc-hm-one-products">
               <Fade top duration={1100}>
                 <p className="txt_products">Our Products</p> 
-                <p className="product-subTitle">We provide complete warehouse monitoring and conveyour sorting solutions.</p>
+                <p className="product-subTitle">We provide complete warehouse monitoring and conveyour sorting solutions</p>
                 <div className="carousel-div">
                   <Row>
                     <Col md={4}>

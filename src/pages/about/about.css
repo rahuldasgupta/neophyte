@@ -597,10 +597,6 @@ p.vision-para{
   height: 112vh;
   background-color: #d0a02b;
 }
-.warehouse-img-1{
-  height: 112vh;
-  object-fit:fill;
-}
 .warehouse-img-2{
   height: 90vh;
   object-fit:fill;
@@ -758,13 +754,6 @@ p.txt_products {
   margin-top: 3% !important;
   text-align: center;
 }
-p.product-subTitle{
-  color: #AAAAAA;
-  font-family: "Poppins", sans-serif;
-  font-size: 13.5px;
-  text-align: center;
-  margin-top: -10px;
-}
 p.txt-title-modal {
   color: #193f6a;
   font-size: 28px;
@@ -845,7 +834,7 @@ p.txt_.three {
 p.txt_.subTitle {
   color: white !important;
   font-family: Poppins;
-  font-size: 14px !important;
+  font-size: 14.5px !important;
   line-height: 23px !important;
   margin-top: 15px !important;
   margin-left: 2px !important;
@@ -1233,13 +1222,13 @@ p.team-text-title{
   color:#d0a02b;
   font-weight: 600;
   font-size: 13.8px;
-  margin-top: 22%;
+  margin-top: 21%;
 }
 .about-midSide-div2-title{
   color:#3b3b3b;
   font-weight: 600;
   font-size: 28px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 .more-team-txt{
   color: #fff;
@@ -1253,18 +1242,6 @@ p.team-text-title{
   font-size: 40px;
   font-family: "Poppins", sans-serif;
   text-align: center;
-}
-.about-midSide-div2-para{
-  color:#878787;
-  font-size: 13.4px;
-  margin-top: -5px;
-}
-.why-midSide-div2-para{
-  color:#fff;
-  font-size: 15px;
-  margin-top: -5px;
-  padding-left: 10%;
-  font-family: "Poppins", sans-serif;
 }
 .play_img{
   position:absolute;
