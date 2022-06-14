@@ -77,6 +77,22 @@ p.send-mssge {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .why-midSide-div2-title{
+    color:#fff;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-top: 23%;
+    padding-left: 10%;
+    font-family: "Poppins", sans-serif;
+  }
+  .why-midSide-div2-para{
+    color:#fff;
+    font-size: 15px;
+    margin-top: -5px;
+    padding-left: 10%;
+    font-family: "Poppins", sans-serif;
+  }
   .content-box{
     margin-top: 3%;
     margin-left: 4%;
@@ -122,15 +138,187 @@ p.send-mssge {
 .txt-in {
   margin-left: 4%;
 }
+/*HERE*/
 @media screen and (min-width: 767px) {
   .about-desktop-info{
     margin-left:-95px;
     width: 118%;
   }
+  .stock_img{
+    height: 500px;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  button.requestQuote {
+    width: 185px;
+    height: 40px;
+    border-radius: 0px;
+    color: white;
+    font-size: 16px;
+    font-family: "Poppins";
+    margin-top: 10px;
+    background: #d0a02b;
+    margin-left: 20px;
+  }
+  .warehouse-img-1{
+    height: 112vh;
+    object-fit:cover;
+    display: block;
+  }
+  .sc-hm-one-products {
+    padding-top: 4%;
+    height: 115vh;
+    background-color: #fff;
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .sc-hm-one-products-home2 {
+    height: 105vh;
+    background-color: #fff;
+    padding-top: 2%;
+    padding-left: 12%;
+    padding-right: 7%;
+  }
+  .clients-img-neo{
+    position:absolute;
+    right: 7.7% !important;
+    margin-top: 21%;
+    height: 180px;
+    width: 140px;
+    cursor: pointer;
+    display: block;
+  }
+  .warehouse-img-2-neo{
+    height: 80vh;
+    width: 100%;
+    object-fit:cover;
+    margin-top: 1.5%;
+    border-radius: 5px;
+    display: block;
+  }
+  .why-us {
+    margin-top: 4%;
+    height: 112vh;
+    background-color: #d0a02b;
+  }
+  .contact-div-first-home{
+    background: #d0a02b;
+    border-radius: 10px;
+    height: 89.7vh !important;
+    padding-left: 10% !important;
+    padding-top: 13%;
+  }
+  .sc-hm-one-contact {
+    background-repeat: no-repeat, repeat;
+    background-position: left top;
+    background-image: url("../../assets/images/neometry_screen_5.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 110vh !important;
+  }
+  .home-contact-inner{
+    padding-top: 20%;
+    padding-left: 18%;
+    padding-right: 18%;
+  }
 }
 @media screen and (max-width: 767px) {
   .txt-in {
     display: none;
+  }
+  .why-us {
+    margin-top: 4%;
+    height: 100vh;
+    background-color: #d0a02b;
+  }
+  .home-contact-inner{
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;
+  }
+  .sc-hm-one-contact {
+    background-repeat: no-repeat, repeat;
+    background-position: left top;
+    background-image: url("../../assets/images/neometry_screen_5.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100% !important;
+  }
+  .contact-div-first-home{
+    background: #d0a02b;
+    border-radius: 10px;
+    height: 100%;
+    padding-bottom: 13% !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    padding-top: 13%;
+  }
+  .warehouse-img-1{
+    display: none;
+  }
+  .clients-img-neo{
+    display: none;
+  }
+  .warehouse-img-2-neo{
+    display: none;
+  }
+  .sc-hm-one-products-home2 {
+    height: 100%;
+    background-color: #fff;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 7%;
+  }
+  .sc-hm-one-products {
+    padding-top: 4%;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .why-midSide-div2-title{
+    color:#fff;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-top: 23%;
+    padding-left: 7%;
+    padding-right: 7%;
+    font-family: "Poppins", sans-serif;
+  }
+  .why-midSide-div2-para{
+    color:#fff;
+    font-size: 15px;
+    margin-top: -5px;
+    padding-left: 7%;
+    padding-right: 7%;
+    font-family: "Poppins", sans-serif;
+  }
+  button.requestQuote {
+    width: 185px;
+    height: 40px;
+    border-radius: 0px;
+    color: white;
+    font-size: 16px;
+    font-family: "Poppins";
+    margin-top: 10px;
+    background: #d0a02b;
+  }
+  .stock_img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
   }
   #myElement3 {
     display: none;
@@ -162,8 +350,8 @@ p.ct-frm-lbl {
   margin-bottom: -3px;
 }
 .in-cus-ct {
-  background: #f2ecec;
-  border-radius: 25px;
+  background: #E8E8E8;
+  border-radius: 5px;
   padding-left: 10px;
 }
 .book-input {
@@ -173,24 +361,26 @@ p.ct-frm-lbl {
   margin-top: 15px;
 }
 .messageInput {
-  background: #f2ecec;
-  border-radius: 25px;
+  background: #F1F1F1;
+  border-radius: 5px;
   padding-left: 18px;
   border: none;
-  width: 99%;
-  padding-top: 5px;
-  min-height: 73px;
+  width: 95%;
+  margin-top: 7%;
+  min-height: 100px;
 }
 .input_ {
-  background: #f2ecec;
-  border-radius: 25px;
+  background: #E8E8E8;
+  border-radius: 5px;
   padding-left: 19px !important;
   border: none;
-  width: 99%;
-  padding-top: 5px;
-  min-height: 43px;
-  margin-top: 10px;
+  width: 95%;
+  min-height: 47px;
+  margin-bottom: 7%;
   padding-right: 20px !important;
+}
+.home-contact-select{
+  width: 95%;
 }
 .selectCity {
   margin-top: 15px;
@@ -220,12 +410,11 @@ input.bookinput_ {
 input.input_ {
   /* background: red; */
   background: #f2ecec;
-  border-radius: 25px;
+  border-radius: 5px;
   padding-left: 18px;
   border: none;
-  width: 100%;
-  padding-top: 5px;
-  min-height: 43px;
+  width: 95%;
+  min-height: 47px;
 }
 p.loginErrorTxt {
   font-family: "Poppins", sans-serif;
@@ -568,42 +757,16 @@ p.choosePayment {
   -o-background-size: cover;
   background-size: cover;
 }
-.sc-hm-one-contact {
-  background-repeat: no-repeat, repeat;
-  background-position: right top;
-  background-image: url("../../assets/images/background-rect.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 105vh;
-}
+
 .contact-section-home{
   margin-top: 10%;
   margin-left: 6%;
   margin-right: 6%;
   margin-bottom: 5%;
 }
-.sc-hm-one-products {
-  padding-top: 4%;
-  height: 115vh;
-  background-color: #fff;
-  padding-top: 5%;
-  padding-left: 7%;
-  padding-right: 7%;
-}
+
 .others{
   background-color: #f9f9f9
-}
-.why-us {
-  margin-top: 4%;
-  height: 112vh;
-  background-color: #d0a02b;
-}
-.warehouse-img-1{
-  height: 112vh;
-  object-fit:cover;
-
 }
 .warehouse-img-2{
   height: 90vh;
@@ -707,6 +870,11 @@ p.useCase-title{
   font-family: "Poppins", sans-serif;
   color: #d4943f;
 }
+.why-us-contact{
+  padding: 0px;
+  height: 110vh;
+  background-color: #d0a02b;
+}
 p.txt_.Title {
   color: white !important;
   font-family: "Poppins", sans-serif !important;
@@ -726,7 +894,7 @@ p.txt_products {
 }
 p.product-subTitle{
   color: #4B4B4B;
-  font-size: 15px;
+  font-size: 15.5px;
   text-align: center;
   margin-top: -10px;
 }
@@ -781,6 +949,22 @@ p.title-home-about {
   font-weight: 600;
   margin-left: 12px;
 }
+
+.contact-icon-first-home{
+  margin-top: 10% !important;
+  margin-left: 4%;
+}
+.contact-icon-second-home{
+  margin-left: 4%;
+  margin-top: 3.5%;
+}
+.contact-div1-subtitle-home{
+  color:#fff;
+  font-size: 16px;
+  padding-top: 3px;
+  padding-right: 10%;
+  font-family: "Poppins", sans-serif;
+}
 p.txt_.one {
   color: #193f6a !important;
   font-family: "Poppins", sans-serif;
@@ -806,14 +990,6 @@ p.txt_.three {
   margin-bottom: 12px !important;
   margin-top: -11px !important;
   margin-left: 14px;
-}
-p.txt_.subTitle {
-  color: white !important;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 14.5px !important;
-  line-height: 23px !important;
-  margin-top: 15px !important;
-  margin-left: 2px !important;
 }
 p.txt_.one {
   margin-top: 56px !important;
@@ -846,16 +1022,16 @@ button.visit-site {
   margin-bottom: 17px;
   margin-top: 10px;
 }
-button.requestQuote {
-  width: 185px;
+
+button.requestQuote-homecontact {
+  width: 165px;
   height: 40px;
   border-radius: 0px;
   color: white;
   font-size: 16px;
   font-family: "Poppins";
-  margin-top: 10px;
+  margin-top: 7%;
   background: #d0a02b;
-  margin-left: 20px;
 }
 .aln-hm-cn {
   float: right;
@@ -1153,12 +1329,7 @@ h1, h2, h3, h5 {
   box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
   transition: all ease 200ms;
 }
-.stock_img{
-  height: 500px;
-  width: 90%;
-  object-fit: cover;
-  border-radius: 5px;
-}
+
 .about-midSide-div2{
   color:#d0a02b;
   font-weight: 600;
@@ -1171,26 +1342,10 @@ h1, h2, h3, h5 {
   font-size: 28px;
   margin-top: 0px;
 }
-.why-midSide-div2-title{
-  color:#fff;
-  font-weight: 600;
-  font-size: 40px;
-  margin-top: 10px;
-  margin-top: 23%;
-  padding-left: 10%;
-  font-family: "Poppins", sans-serif;
-}
 .about-midSide-div2-para{
   color:#3C3C3C;
-  font-size: 13.8px;
+  font-size: 14px;
   margin-top: -5px;
-}
-.why-midSide-div2-para{
-  color:#fff;
-  font-size: 15px;
-  margin-top: -5px;
-  padding-left: 10%;
-  font-family: "Poppins", sans-serif;
 }
 .play_img{
   position:absolute;

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 .menu-logo {
     width: 160px;
     margin-top:12%;
@@ -8,6 +9,17 @@
      margin-top:3px; 
      margin-bottom:3px;
  }
+ .empty-sidebar-div{
+     padding-top: 25vh;
+     padding-bottom: 25vh;
+ }
+ span.sidebar-item-txt{
+    color: #fff !important;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    padding-top: 17px;
+    padding-left: 10px;
+ }
  .btn {
      background-color: transparent;
      border: 0px solid;
@@ -15,9 +27,6 @@
      font-size: 14px !important;
      padding-left: -50px;
  }
- .btn:hover{
-     color: #ba7105 !important;
- } 
  .submenu-dot {
      margin-right: 14px;
  }

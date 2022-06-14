@@ -113,9 +113,6 @@ p.send-mssge {
     padding-left: 10%;
     padding-bottom: 30%;
   }
-  .text-pop-about {
-    margin-top: 20%;
-  }
 }
 .txt-in {
   margin-left: 4%;
@@ -159,71 +156,17 @@ p.ct-frm-lbl {
   color: #3f3a3a;
   margin-bottom: -3px;
 }
-.in-cus-ct {
-  background: #f2ecec;
-  border-radius: 25px;
-  padding-left: 10px;
-}
 .book-input {
   border-radius: 5px;
 }
 #marginInputs {
   margin-top: 15px;
 }
-.messageInput {
-  background: #f2ecec;
-  border-radius: 25px;
-  padding-left: 18px;
-  border: none;
-  width: 99%;
-  padding-top: 5px;
-  min-height: 73px;
-}
-.input_ {
-  background: #f2ecec;
-  border-radius: 25px;
-  padding-left: 19px !important;
-  border: none;
-  width: 99%;
-  padding-top: 5px;
-  min-height: 43px;
-  margin-top: 10px;
-  padding-right: 20px !important;
-}
 .selectCity {
   margin-top: 15px;
 }
 .selectTime {
   margin-top: 17px !important;
-}
-.bookinput_ {
-  border-radius: 5px;
-  padding-left: 19px !important;
-  border: 1.5px solid #bfbfbf;
-  padding-top: 5px;
-  min-height: 43px;
-  margin-top: 15px;
-  width: 100%;
-}
-input.bookinput_ {
-  /* background: red; */
-  border-radius: 5px;
-  padding-left: 18px;
-  width: 100%;
-  border: 1.5px solid #bfbfbf;
-  padding-top: 5px;
-  min-height: 43px;
-}
-
-input.input_ {
-  /* background: red; */
-  background: #f2ecec;
-  border-radius: 25px;
-  padding-left: 18px;
-  border: none;
-  width: 100%;
-  padding-top: 5px;
-  min-height: 43px;
 }
 p.loginErrorTxt {
   font-family: "Poppins", sans-serif;
@@ -254,9 +197,6 @@ span.validateErrorTxt {
   margin-top: 10px;
   padding-right: 20px !important;
   font-size: 16px;
-}
-input.bookinput_:focus {
-  border: 1.5px solid #bfbfbf;
 }
 input:focus,
 textarea:focus {
@@ -575,13 +515,6 @@ p.choosePayment {
 .vision-txt-margin{
   margin-bottom: 5%;
 }
-p.vision-para{
-  text-align: right;
-  font-size: 16px;
-  margin-top: 5%;
-  font-weight: 500;
-  color: #222;
-}
 .sc-hm-one-products-senti {
   height: 100vh !important;
   background-color: #fff;
@@ -599,11 +532,7 @@ p.vision-para{
 .others{
   background-color: #f9f9f9
 }
-.why-us-about {
-  margin-top: 4%;
-  height: 112vh;
-  background-color: #d0a02b;
-}
+
 .warehouse-img-2{
   height: 90vh;
   object-fit:fill;
@@ -649,12 +578,6 @@ p.timeline-year{
 .timeline-icon{
   color: #fff
 }
-.why-us-about-inner {
-  padding-top: 8%;
-  padding-left: 15%;
-  padding-right: 15%;
-  height: 112vh;
-}
 .img-down{
   margin-top: 17%;
 }
@@ -666,12 +589,6 @@ p.timeline-year{
   object-fit: cover;
   width: 100%;
   border-radius: 5px;
-}
-.team-imgs{
-  height: 240px!important;
-  object-fit: cover;
-  width: 250px !important;
-  border-radius: 8px;
 }
 .team-univ-imgs{
   height: 45px !important;
@@ -690,21 +607,6 @@ p.timeline-year{
   width: 130px !important;
   object-fit: cover;
   margin-top: -5px;
-}
-.sc-hm-one-in-about {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(19, 19, 17, 0.8);
-  padding-left: 13px;
-  padding-bottom: 3%;
-  height: 90vh;
-}
-
-.text-pop-about {
-  float: center;
-  text-align: center;
 }
 .prodct-pointer{
   cursor: pointer;
@@ -852,14 +754,6 @@ p.txt_.three {
   margin-top: -11px !important;
   margin-left: 14px;
 }
-p.txt_.subTitle {
-  color: white !important;
-  font-family: Poppins;
-  font-size: 14.5px !important;
-  line-height: 23px !important;
-  margin-top: 15px !important;
-  margin-left: 2px !important;
-}
 p.txt_.one {
   margin-top: 56px !important;
 }
@@ -891,17 +785,6 @@ button.visit-site-about-team {
   border-radius: 5px;
   margin-top: 15px;
   margin-left: 45%;
-}
-button.requestQuote {
-  width: 185px;
-  height: 40px;
-  border-radius: 0px;
-  color: white;
-  font-size: 16px;
-  font-family: "Poppins";
-  margin-top: 10px;
-  background: #d0a02b;
-  margin-left: 20px;
 }
 button.requestQuote-senti {
   width: 185px;
@@ -1400,14 +1283,6 @@ span.card-third-span{
   letter-spacing: 0.04em;
   margin: 1.4em 0 0 0;
   text-transform: uppercase;
-}
-
-.card-body-about-team {
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 1em;
-  border-radius: 8px;
-  background: #E3E3E3;
 }
 .card-body-2 {
   padding: 1.2em;

@@ -8,9 +8,10 @@ import {
 } from "react-pro-sidebar";
 import "./custom.scss";
 import "./sidebar_styles.css";
-import { AiOutlineHome, AiOutlineCodeSandbox } from "react-icons/ai";
+import { GiButterfly } from "react-icons/gi";
 import { BiSupport, BiInfoCircle, BiUserCircle } from "react-icons/bi";
-import { FcAdvertising } from "react-icons/fc";
+import { BsBoxSeam, BsNewspaper } from "react-icons/bs";
+import { FaWarehouse } from "react-icons/fa";
 import logo from "../../assets/logo.gif";
 
 class SideBar extends React.Component {
@@ -28,60 +29,42 @@ class SideBar extends React.Component {
   render() {
     return (
       <ProSidebar>
-        <center><img src={logo} className="footer-logo" /></center>
+        <center>
+          <img src={logo} style={{ height: 35, width: 150, marginTop:"10%", marginBottom: "10%" }} />
+        </center>
         <Menu iconShape="square">
-          <MenuItem icon={<FcAdvertising size={25} color={"#fff"}/>}>
-            <button
-                  className="btn"
-                  onClick={() => this.props.history.push("/ads")}
-            >
-                  Sentinel
-            </button>
+          <MenuItem icon={<BiInfoCircle size={32} color={"#fff"}/>}>
+            <a>
+              <span className="sidebar-item-txt">About</span>
+            </a>
           </MenuItem>
-          <MenuItem icon={<BiSupport size={25} color={"#fff"}/>}>
-            <button
-                  className="btn"
-                  onClick={() => this.props.history.push("/contact")}
-            >
-                  Contact
-            </button>
+          <MenuItem icon={<FaWarehouse size={26} color="white"/>}>
+            <a>
+              <span className="sidebar-item-txt">Sentinel</span>
+            </a>
           </MenuItem>
-          <MenuItem icon={<BiInfoCircle size={25} color={"#fff"}/>}>
-            <button
-                  className="btn"
-                  onClick={() => this.props.history.push("/about-us")}
-            >
-                  About
-            </button>
+          <MenuItem icon={<BsBoxSeam size={26} color={"#fff"}/>}>
+            <a>
+              <span className="sidebar-item-txt">NeoMetry</span>
+            </a>
           </MenuItem>
-          <MenuItem icon={<AiOutlineCodeSandbox size={25} color={"#fff"}/>}>
-          <button
-                  className="btn"
-                  onClick={() => this.props.history.push("/services")}
-            >
-                  Services
-          </button>
+          
+          <MenuItem icon={<BsNewspaper size={25} color={"#fff"}/>}>
+            <a>
+              <span className="sidebar-item-txt">Blogs</span>
+            </a>
           </MenuItem>
-          <MenuItem icon={<AiOutlineHome size={25} color={"#fff"}/>}>
-            <button
-                  className="btn"
-                  onClick={() => this.props.history.push("/")}
-            >
-                  Home
-            </button>
+          <MenuItem icon={<BiSupport size={27} color={"#fff"}/>}>
+            <a>
+              <span className="sidebar-item-txt">Support</span>
+            </a>
           </MenuItem>
-          <MenuItem icon={<BiUserCircle size={25} color={"#fff"}/>}>
-            <button
-                  className="btn"
-                  onClick={() => this.props.history.push("/")}
-            >
-                  Profile
-            </button>
+          <MenuItem icon={<GiButterfly size={27} color={"#fff"}/>}>
+            <a>
+              <span className="sidebar-item-txt">AmIWare</span>
+            </a>
           </MenuItem>
-          <MenuItem iconShape="square">Dashboard</MenuItem>
-          <MenuItem iconShape="square">Dashboard</MenuItem>
-          <MenuItem iconShape="square">Dashboard</MenuItem>
-          <MenuItem iconShape="square">Dashboard</MenuItem>
+          <div className="empty-sidebar-div"></div>
         </Menu>
       </ProSidebar>
     );

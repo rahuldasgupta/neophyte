@@ -56,11 +56,11 @@ class about extends React.Component {
               <div className="sc-hm-one-about">
                 <div className="sc-hm-one-in-about">
                   <Container>
-                    <Row className="homAdse-section">
+                    <Row>
                       <Col md={2}></Col>
-                      <Col md={8}>
+                      <Col md={8} xs={12} sm={12}>
                         <div className="text-pop-about">
-                        <p className="txt_ Title" id="myElement4">
+                          <p className="txt_ Title" id="myElement4">
                             Driven by force of excellence
                           </p>
                           <p className="txt_ subTitle">
@@ -83,8 +83,8 @@ class about extends React.Component {
               <div className="content-box div2" id="about-div2-info">
                 <div>
                   <p className="services-top-title">Our startup story</p>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p>NeoPhyte is an EmTech (Computer Vision/AI/ML, IoT) focussed startup developing Ambient Intelligent Platform & Products/Solutions to create affordable and high-performance automation environments, especially in supply chain management for Industry 4.0. In regard to Warehouse, our company deals with some niche problem areas, bottlenecks, and domain-specific use-cases of the supply chain ecosystem.</p>
+                  <p>This is achieved through on-the-edge deployment of intelligent IoT devices & services which integrate with the tools (WMS, AS/RS) which are already in use within the warehouse environment & make Key Performance Indices (KPIs) monitoring, improvement, and anomaly detection highly data-driven. We also heavily leverage emerging technologies like AI/ML/CV etc, as required, for enhancing the effectiveness of the solutions.</p>
                   <img src={quote_left} style={{height: 70, width: 70}}/>
                   <Row>
                     <Col md={1}></Col>
@@ -178,7 +178,9 @@ class about extends React.Component {
                       <div className='cards-about-team'>
                         <div className="card-about-team">
                           <div className="card-body-about-team">
-                            <center><img src={anurag} className="team-imgs"/></center>
+                            <center>
+                              <img src={anurag} className="team-imgs"/>
+                            </center>
                           </div>
                           <p className="team-text-title">Anurag S.</p>
                           <p className="team-text-subtitle">Co-Founder & CEO</p>
@@ -190,7 +192,9 @@ class about extends React.Component {
                       <div className='cards-about-team'>
                         <div className="card-about-team">
                           <div className="card-body-about-team">
-                            <center><img src={abhinav} className="team-imgs"/></center>
+                            <center>
+                              <img src={abhinav} className="team-imgs"/>
+                            </center>
                           </div>
                           <p className="team-text-title">Dr. Abhinav Anand</p>
                           <p className="team-text-subtitle">Co-Founder & CEO</p>
@@ -247,22 +251,22 @@ class about extends React.Component {
               <p className="product-subTitle">The place where all the great and creative minds of Neophyte collaborate.</p>
               <div className="carousel-div">
                 <Row>
-                  <Col md={3} xs={3} sm={3}>
+                  <Col md={3} xs={6} sm={6}>
                     <div className="page-container">
                       <img src={office_1} className="office-imgs img-down"/>
                     </div>
                   </Col>
-                  <Col md={3} xs={3} sm={3}>
+                  <Col md={3} xs={6} sm={6}>
                     <div className="page-container">
                       <img src={office_2} className="office-imgs"/>
                     </div>
                   </Col>
-                  <Col md={3} xs={3} sm={3}>
+                  <Col md={3} xs={6} sm={6}>
                     <div className="page-container">
                       <img src={office_3} className="office-imgs img-down"/>
                     </div>
                   </Col>
-                  <Col md={3} xs={3} sm={3}>
+                  <Col md={3} xs={6} sm={6}>
                     <div className="page-container">
                         <img src={office_4} className="office-imgs"/>
                     </div>
@@ -273,7 +277,7 @@ class about extends React.Component {
             <div className="sc-hm-one-products">
               <p className="txt_products vision-txt-margin">Vision & Journey</p>
               <Row>
-                <Col md={4}>
+                <Col md={4} xs={12} sm={12}>
                   <Timeline position="alternate">
                     <TimelineItem>
                       <TimelineOppositeContent
@@ -369,9 +373,9 @@ class about extends React.Component {
                   </Timeline>
                 </Col>
                 <Col md={1}></Col>
-                <Col md={7}>
-                  <p className="vision-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  <p className="vision-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <Col md={7} xs={12} sm={12}>
+                  <p className="vision-para">Take a revolutionary step towards truly realizing the visions and requirements of Industry 4.0 by creating an environment-level intelligence or Ambient Intelligence which demonstrate the capability of having ubiquitous computing, being context awareness, enabling interoperability of IoT devices, and mainly focus on tracking and tracing, zero-defect manufacturing, and proactive maintenance.</p>
+                  <p className="vision-para">Our Ambient Integrated Platform is one such inclusive technology which embraces user-centric approaches, exploits machine vision techniques, provide ambient connectivity and interoperability for IoT, and ensure secure and reliable human-machine interactions (HCI) and machine-machine interactions (M2I).</p>
                 </Col>
               </Row>
             </div>

@@ -54,8 +54,35 @@ span.services-nav-text:hover {
     font-weight: 600;
     cursor: pointer;
 }
+.demo-modal-right{
+    margin-top: 35%;
+}
+.contact-field {
+    background: #fff;
+    width: 85%;
+    border: none;
+    padding-bottom: 5px;
+    border-bottom: 1.2px solid #999999;
+    margin-bottom: 20%;
+}
+.contact-field-message {
+    background: #fff;
+    width: 85%;
+    border: none;
+    height: 55px;
+    padding-bottom: 5px;
+    border-bottom: 1.2px solid #999999;
+    margin-bottom: 7%;
+}
 .contact-div-second{
-    margin-left: 10%;
+    padding-left: 10% !important;
+    width: 100%;
+}
+.navbar-contact-textfield-div{
+    height: 35%;
+}
+.navbar-contact-textfield-div2{
+    margin-top: -285px !important;
 }
 .contact-icon-second{
     margin-left: 4%;
@@ -65,17 +92,17 @@ span.services-nav-text:hover {
     margin-top: -400px;
 }
 .contact-textField-height-third{
-    margin-top: -460px;
+    margin-top: 10%
 }
 .submitBtn{
-    float: right;
     width: 165px;
     height: 40px;
     color: white;
     font-size: 16px;
     font-family: "Poppins";
     background: #d0a02b;
-    
+    margin-top: 7%;
+    margin-right: 10%;
 }
 .contact-sbmit-btn{
     margin-top: -490px !important;
@@ -273,9 +300,18 @@ p.loginErrorTxt {
         justify-content: flex-start;
     }	
     .sidebar-icon{
-        margin-left: 4%;
         height: 22px;
         width: 30px;
+    }
+    .mobile-side-img-div{
+        padding-left: 60%;
+        padding-top: 10px;
+        width: 65%;
+    }
+    .mobile-side-img-div2{
+        width: 35%;
+        padding-left: 50%;
+        padding-top: 10%;
     }
 }
 .divider-Margin{

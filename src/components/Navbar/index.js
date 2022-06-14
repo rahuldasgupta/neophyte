@@ -7,7 +7,6 @@ import ModalBody from "react-bootstrap/ModalBody";
 import { ToastContainer, toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import SideBar from "../Sidebar/sidebar";
-import TextField from '@mui/material/TextField';
 import Checkbox from '@mui/material/Checkbox';
 
 import logo from "../../assets/logo.gif";
@@ -91,7 +90,7 @@ class Navbar extends React.Component {
               <Row>
                 <Col md={5}>
                   <div className="contact-div-first">
-                    <p className="contact-div1-title">Contact Information</p>
+                    <p className="contact-div1-title">Request Demo</p>
                     <p className="contact-div1-subtitle">Fill up the form and our team will get back to you in 24 hrs</p>
                     <div className="contact-icon-first">
                       <Row>
@@ -180,60 +179,83 @@ class Navbar extends React.Component {
                       className="closeIconX"
                       onClick={() => this.setState({ contactModal: false })}
                     />
+                    <div className="navbar-contact-textfield-div">
                       <Row>
                         <Col md={6}>
-                            <TextField id="standard-basic" sx={{width: 235}} label="First Name" variant="standard" size="small" style={{height: 55, marginTop: "30%", marginLeft: -13}}/>
+                          <div className="demo-modal-right">
+                            <input
+                              className="contact-field"
+                              type="text"
+                              placeholder="First Name"
+                              enterKeyHint="next"
+                            />
+                            <input
+                              className="contact-field"
+                              type="text"
+                              placeholder="Email"
+                              enterKeyHint="next"
+                            />
+                          </div>
                         </Col>
                         <Col md={6}>
-                            <TextField id="standard-basic" sx={{width: 235}} label="Last Name" variant="standard" size="small" style={{height: 55, marginTop: "30%", marginLeft:27}}/>
+                          <div className="demo-modal-right">
+                            <input
+                              className="contact-field"
+                              type="text"
+                              placeholder="Last Name"
+                              enterKeyHint="next"
+                            />
+                            <input
+                              className="contact-field"
+                              type="number"
+                              placeholder="Phone"
+                              enterKeyHint="next"
+                            />
+                          </div>
                         </Col>
                       </Row>
-                    <div className="contact-textField-height">   
-                      <Row>
-                        <Col md={6}>
-                            <TextField id="standard-basic" sx={{width: 235}} label="Email" variant="standard" size="small" style={{height: 55, }}/>
-                        </Col>
-                        <Col md={6}>
-                            <TextField id="standard-basic" sx={{width: 235}} label="Phone Number" variant="standard" size="small" style={{height: 55,}}/>
-                        </Col>
-                      </Row>
                     </div>
-                    <div className="contact-textField-height-third">
-                      <Row>
-                        <Col>
-                          <Checkbox
-                            icon={<BsCircle size={20} className="chbk-icons"/>}
-                            checkedIcon={<BsCheckCircleFill size={20} className="chbk-icons"/>}
-                          />
-                          <span>Complaint</span>
-                        </Col>
-                        <Col>
-                          <Checkbox
-                            icon={<BsCircle size={20} className="chbk-icons"/>}
-                            checkedIcon={<BsCheckCircleFill size={20} className="chbk-icons"/>}
-                          />
-                          <span>Feedback</span>
-                        </Col>
-                        <Col>
-                          <Checkbox
-                            icon={<BsCircle size={20} className="chbk-icons"/>}
-                            checkedIcon={<BsCheckCircleFill size={20} className="chbk-icons"/>}
-                          />
-                          <span>Enquiry</span>
-                        </Col>
-                      </Row> 
-                    </div>
-                    <div className="contact-textField-height-third">
-                      <TextField id="standard-basic" sx={{width: "90%"}} label="Message" variant="standard" size="small" style={{height: 65, marginTop: -40, marginLeft: -12}}/>
-                    </div>
-                    <div className="contact-sbmit-btn">
-                      <button
-                        className="submitBtn"
-                        //onClick={() => this.successToast()}
-                        style={{borderRadius: 5}}
-                      >
-                        Submit
-                      </button>
+                    <div className="navbar-contact-textfield-div2">
+                      <input
+                        className="contact-field-message"
+                        type="number"
+                        placeholder="Message"
+                        enterKeyHint="next"
+                      />
+                      <div style={{height: 35}}>
+                        <Row>
+                          <Col md={4}>
+                            <Checkbox
+                              icon={<BsCircle size={20} className="chbk-icons"/>}
+                              checkedIcon={<BsCheckCircleFill size={20} className="chbk-icons"/>}
+                            />
+                            <span>Demo Request</span>
+                          </Col>
+                          <Col md={4}>
+                            <Checkbox
+                              icon={<BsCircle size={20} className="chbk-icons"/>}
+                              checkedIcon={<BsCheckCircleFill size={20} className="chbk-icons"/>}
+                            />
+                            <span>Consultation</span>
+                          </Col>
+                          <Col md={4}>
+                            <Checkbox
+                              icon={<BsCircle size={20} className="chbk-icons"/>}
+                              checkedIcon={<BsCheckCircleFill size={20} className="chbk-icons"/>}
+                            />
+                            <span>Enquiry</span>
+                          </Col>
+                        </Row>
+                      </div>
+                      <center>
+                        <button
+                          className="submitBtn"
+                          //onClick={() => this.successToast()}
+                          style={{borderRadius: 5}}
+                        >
+                          Submit
+                        </button>
+                      </center>
                     </div>
                   </div>
                 </Col>
@@ -342,22 +364,26 @@ class Navbar extends React.Component {
               </Row>
               :
               <Row>
-                <Col className="sidebar-icon">
+                <Col>
+                <div className="mobile-side-img-div2">
                   <img
                       alt="sidebar"
                       src={sidebar_icon}
                       className="sidebar-icon"
                       onClick={() => this.setState({ sideBar: true })}
                     />
+                </div>
                 </Col>
                 <Col>
-                  <a href="https://neophyte.vercel.app/">
-                    <img
-                      alt="logo"
-                      src={logo}
-                      style={{ height: 40, width: 120, marginLeft: "80%", marginTop: -20 }}
-                    />
-                  </a>
+                  <div className="mobile-side-img-div">
+                    <a href="https://neophyte.vercel.app/">
+                      <img
+                        alt="logo"
+                        src={logo}
+                        style={{ height: 35, width: 150, }}
+                      />
+                    </a>
+                  </div>
                 </Col>
               </Row>
             }
@@ -371,10 +397,9 @@ class Navbar extends React.Component {
             </NavLink>
               <p
                 className="navbar_txt"
-                onClick={this.openModal}
                 style={{ marginRight: "9%" }}
               >
-                Contact
+                <a href="https://neophyte.vercel.app/#contact-us">Contact</a>
               </p>
             <a href="https://neophyte.vercel.app/">
               <img alt="logo" src={logo} style={{ height: 35, width: 150 }} />
@@ -396,9 +421,13 @@ class Navbar extends React.Component {
             >
               AmIWare
             </p>
-            <NavLink to="/about" style={{ marginRight: "7%", }}>
-                Demo
-            </NavLink>
+            <p
+              className="navbar_txt"
+              onClick={this.openModal}
+              style={{ marginRight: "7%" }}
+            >
+              Demo
+            </p>
           </NavMenu>
         </Nav>
       </>

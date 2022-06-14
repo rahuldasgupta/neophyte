@@ -7,10 +7,13 @@ import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
 import { BiCheck } from "react-icons/bi";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { ImLocation } from "react-icons/im";
 import Fade from 'react-reveal/Fade';
+import Select from "react-select";
 import 'react-multi-carousel/lib/styles.css';
 
 //Images
@@ -21,13 +24,10 @@ import team from "../../assets/team.png";
 import product from "../../assets/product.png";
 import settings from "../../assets/settings.png";
 import sample_stock from "../../assets/sample_stock.jpg";
-import play from "../../assets/play.png";
 import clients from "../../assets/clients.jpg";
-import next from "../../assets/next.png";
 import trust from "../../assets/trust.png";
 import rating from "../../assets/rating.png";
 import badge from "../../assets/badge.png";
-import location from "../../assets/location.png";
 import sentinel from "../../assets/sentinel.jpg";
 import neometry from "../../assets/neometry.jpg";
 import amiware from "../../assets/amiware.jpg";
@@ -35,26 +35,36 @@ import signature from "../../assets/signature.png";
 import warehouse_1 from "../../assets/warehouse_1.jpg";
 import warehouse_2 from "../../assets/warehouse_2.jpg";
 
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1000 },
-    items: 3
-  },
-  tablet: {
-    breakpoint: { max: 1000, min: 464 },
-    items: 2
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
+const customStyles = {
+  control: (base, state) => ({
+    ...base,
+    background: "#F1F1F1",
+    borderRadius: 5,
+    borderColor: "white",
+    boxShadow: null,
+    height: 48,
+    paddingLeft: 10,
+  }),
+  menu: base => ({
+    ...base,
+    // override border radius to match the box
+    borderRadius: 0,
+    // kill the gap
+    marginTop: 0
+  }),
+  menuList: base => ({
+    ...base,
+    // kill the white space on first and last option
+    padding: 0
+  })
 };
 
+
+const priceOptions = [
+  { value: "Query", label: "Query" },
+  { value: "Feedback", label: "Feedback" },
+  { value: "Demo Request", label: "Demo Request" },
+];
 
 class home extends React.Component {
   constructor(props) {
@@ -62,6 +72,7 @@ class home extends React.Component {
     this.state = {
       switchView: true,
       sentinel: true,
+      visitPackage: null,
       neometry: false,
       center: {
         lat: 59.95,
@@ -74,6 +85,7 @@ class home extends React.Component {
     this.setState({ sentinelView: !this.state.sentinelView, sentinel: !this.state.sentinel, neometry: !this.state.neometry });
  };
   render() {
+    const { visitPackage } = this.state;
     return (
       <div className="container-box">
         <div>
@@ -147,10 +159,10 @@ class home extends React.Component {
               <div className="content-box div2">
                 <Fade top duration={1850} cascade>
                   <Row>
-                    <Col md={3}>
+                    <Col md={3} xs={12} sm={12}>
                       <p className="services-top-title">What We<br/>Care</p>
                     </Col>
-                    <Col md={3}>
+                    <Col md={3} xs={12} sm={12}>
                       <div className='cards'>
                         <div className="card">
                           <div className="card-body">
@@ -161,7 +173,7 @@ class home extends React.Component {
                         </div>
                       </div> 
                     </Col>
-                    <Col md={3}>
+                    <Col md={3} xs={12} sm={12}>
                       <div className='cards'>
                         <div className="card">
                           <div className="card-body-2">
@@ -172,7 +184,7 @@ class home extends React.Component {
                         </div>
                       </div> 
                     </Col>
-                    <Col md={3}>
+                    <Col md={3} xs={12} sm={12}>
                       <div className='cards'>
                         <div className="card">
                           <div className="card-body-3">
@@ -186,10 +198,10 @@ class home extends React.Component {
                   </Row>
                   <br/><br/>
                   <Row>
-                    <Col md={6}>
+                    <Col md={6} xs={12} sm={12}>
                       <img src={sample_stock} className="stock_img"/>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} xs={12} sm={12}>
                       <p className="about-midSide-div2">Affordable Pricing, Certified Forwarders</p>
                       <p className="about-midSide-div2-title">Safe, Reliable and Optimal Warehouse Sorting Solutions That Saves Your Time!</p>
                       <p className="about-midSide-div2-para">We pride ourselves on providing one of the best in class warehouse solutions that ranges from optimizing packing material requirements, fleet management decision making, and early detection of damages to providing seemless connectivity with WMS and WCS.</p>
@@ -204,7 +216,7 @@ class home extends React.Component {
             </div>
             <div className="why-us">
               <Row>
-                <Col md={6}>
+                <Col md={6} sm={12} xs={12}>
                   <div className="why-us-info">
                     <Fade top duration={1750}>
                       <p className="why-midSide-div2-title">Why Choose Us</p>
@@ -265,9 +277,9 @@ class home extends React.Component {
                 </div>
               </Fade>
             </div>
-            <div className="sc-hm-one-products-neo2">
+            <div className="sc-hm-one-products-home2">
               <Row>
-                <Col md={6}>
+                <Col md={6} xs={12} sm={12}>
                   <Fade top duration={1400}>
                     <img src={clients} className="clients-img-neo"/>
                     <p className="about-midSide-div2-abc">Warehouse Management and OCR Solutions</p>
@@ -324,6 +336,110 @@ class home extends React.Component {
                 <Col md={1}></Col>
                 <Col md={4}>
                   <img src={warehouse_2} className="warehouse-img-2-neo"/>
+                </Col>
+              </Row>
+            </div>
+            <div className="why-us-contact" id="contact-us">
+              <Row>
+              <Col md={5} xs={12} sm={12}>
+                  <div className="contact-div-first-home">
+                    <Fade top duration={1400}>
+                      <p className="contact-div1-title">Contact Information</p>
+                      <p className="contact-div1-subtitle">Fill up the form and our team will get back to you in 24 hrs</p>
+                      <div className="contact-icon-first-home">
+                        <Row>
+                          <Col md={1}>
+                            <FaPhoneAlt
+                              size={22}
+                              className="loc-icons"
+                            />
+                          </Col>
+                          <Col md={5}>
+                            <p className="contact-div1-subtitle-home number">+91 879-480-3021</p>
+                          </Col>
+                        </Row>
+                      </div>
+                      <div className="contact-icon-second-home">
+                        <Row>
+                          <Col md={1}>
+                            <IoIosMail
+                              size={28}
+                              className="loc-icons"
+                            />
+                          </Col>
+                          <Col md={4}>
+                            <p className="contact-div1-subtitle-home number" onClick={() => window.location = 'mailto:sales@neophyte.live'}>sales@neophyte.live</p>
+                          </Col>
+                        </Row>
+                      </div>
+                      <div className="contact-icon-second-home">
+                        <Row>
+                          <Col md={1}>
+                            <ImLocation
+                              size={28}
+                              className="loc-icons"
+                            />
+                          </Col>
+                          <Col md={9}>
+                            <p className="contact-div1-subtitle-home number-2" onClick={() => window.open("https://maps.google.com?q="+19.05033358336438+","+73.06530312559231 )}>
+                              Plot No 401,<br/>
+                              Vishwakarma / Annapurna Mahila Mandal CHS,
+                              Sector 21, Kharghar
+                              Navi Mumbai, Maharashtra 410210
+                            </p>
+                          </Col>
+                        </Row>
+                      </div>
+                    </Fade>
+                  </div>
+                </Col>
+                <Col md={7} xs={12} sm={12}>
+                  <div className="sc-hm-one-contact">
+                    <div className="sc-hm-one-in">
+                      <div className="home-contact-inner">
+                        <Fade top duration={1400}>
+                          <input
+                            className="in-cus-ct input_"
+                            type="text"
+                            placeholder="Name"
+                            enterKeyHint="next"
+                          />
+                          <input
+                            className="in-cus-ct input_"
+                            type="text"
+                            placeholder="Email"
+                            inputMode="email"
+                            enterKeyHint="next"
+                          />
+                          <div className="home-contact-select">
+                            <Select
+                              onChange={this.handlePackage}
+                              value={priceOptions.find(
+                                (item) => item.value === visitPackage
+                              )}
+                              styles={customStyles}
+                              options={priceOptions}
+                              placeholder={
+                                <div>Select</div>
+                              }
+                            />
+                          </div>
+                          <input
+                            className="in-cus-ct messageInput"
+                            type="text"
+                            placeholder="Message"
+                          />
+                          <center>
+                            <button
+                              className="requestQuote-homecontact "
+                            >
+                              Submit
+                            </button>
+                          </center>
+                        </Fade>
+                      </div>
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </div>
