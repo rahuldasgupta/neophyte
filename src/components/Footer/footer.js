@@ -16,7 +16,7 @@ class Footer extends React.Component {
     return (
         <div>
             <Row className="footer_contant">
-                <Col sm={12} md={4} lg={4}>
+                <Col xs={12} sm={12} md={4} lg={4}>
                     <div className="items-cls">
                         <div className="quick-links">
                             <img
@@ -26,35 +26,35 @@ class Footer extends React.Component {
                             />
                             <hr align="center" />
                             <Row>
-                                <Col md={1} lg={1}>
+                                <Col md={1} lg={1} xs={1} sm={1}>
                                     <img
                                         alt="logo"
                                         src={facebook}
                                         className="social-icons"
                                     />
                                 </Col>
-                                <Col md={1} lg={1}>
+                                <Col md={1} lg={1} xs={1} sm={1}>
                                     <img
                                         alt="logo"
                                         src={linkedin}
                                         className="social-icons"
                                     />
                                 </Col>
-                                <Col md={1} lg={1}>
+                                <Col md={1} lg={1} xs={1} sm={1}>
                                     <img
                                         alt="logo"
                                         src={instagram}
                                         className="social-icons"
                                     />
                                 </Col>
-                                <Col md={1} lg={1}>
+                                <Col md={1} lg={1} xs={1} sm={1}>
                                     <img
                                         alt="logo"
                                         src={twitter}
                                         className="social-icons"
                                     />
                                 </Col>
-                                <Col md={1} lg={1}>
+                                <Col md={1} lg={1} xs={1} sm={1}>
                                     <img
                                         alt="logo"
                                         src={youtube}
@@ -62,13 +62,12 @@ class Footer extends React.Component {
                                         style={{borderRadius: 5}}
                                     />
                                 </Col>
-                                <Col md={7} lg={7}></Col>
+                                <Col md={7} lg={7} xs={7} sm={7}></Col>
                             </Row>
                         </div>
                     </div>
                 </Col>
-
-                <Col sm={12} md={4} lg={4}>
+                <Col xs={12} sm={12} md={4} lg={4}>
                     <div className="items-cls sec">
                         <div className="links">
                             <p className="links">
@@ -92,7 +91,6 @@ class Footer extends React.Component {
                         </div>
                     </div>
                 </Col>
-
                 <Col sm={12} md={4} lg={4}>
                     <p className="info">
                         Plot No 401,<br/>

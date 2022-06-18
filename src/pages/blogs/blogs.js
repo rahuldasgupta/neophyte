@@ -83,14 +83,45 @@ class blogs extends React.Component {
               <div className="blogsDiv" id="about-div2-info">
                 <p className="txt_recent">Recent Posts</p>
                 <Row>
-                  <Col md={4}>
+                  <Col md={8} xs={12} sm={12}>
+                    <div className="blogsDiv-inner-2">
+                      <div className="iframe-forMobile">
+                        <center>
+                          <iframe width="100%" height="228" src="https://www.youtube.com/embed/Vj5RmNNxhI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </center>
+                      </div>
+                      <div className="iframe-forPC">
+                        <center>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/Vj5RmNNxhI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </center>
+                      </div>
+                      
+                        <div>
+                          <p className="services-top-title">Random Blog Title</p>
+                          <p className="header-card-left-date">10:25 PM • 24-03-2022</p>
+                          <p className="blog-context-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                          <p className="blog-context-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                          <img src={quote_left} style={{height: 40, width: 40}}/>
+                          <Row>
+                            <Col md={1}></Col>
+                            <Col md={11}>
+                              <p className="quote-txt-blogs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since a very long time.</p>
+                            </Col>
+                            <Col md={1}></Col>
+                          </Row>
+                          <img src={quote_right} className="quote-right-img-blogs"/>
+                        </div>
+                    </div>
+                  </Col>
+                  <Col md={4} xs={12} sm={12}>
                     <div className="blogsDiv-inner">
+                      <p className="txt_recentMobile">Recent Posts</p>
                       <div class="box-blogs">
                         <Row>
-                          <Col md={4}>
+                          <Col md={4} xs={4} sm={4}>
                             <img src={office_1} className="card-ions-blog"/>
                           </Col>
-                          <Col md={8}>
+                          <Col md={8} xs={8} sm={8}>
                             <p className="blog-card-left-header">New Office</p>
                             <p className="blog-card-left-subheader">This is some dummy text for short brief</p>
                             <p className="blog-card-left-date">10:25 PM • 24-03-2022</p>
@@ -99,10 +130,10 @@ class blogs extends React.Component {
                       </div>
                       <div class="box-blogs">
                         <Row>
-                          <Col md={4}>
+                          <Col md={4} xs={4} sm={4}>
                             <img src={office_2} className="card-ions-blog"/>
                           </Col>
-                          <Col md={8}>
+                          <Col md={8} xs={8} sm={8}>
                             <p className="blog-card-left-header">New Office</p>
                             <p className="blog-card-left-subheader">This is some dummy text for short brief</p>
                             <p className="blog-card-left-date">10:25 PM • 24-03-2022</p>
@@ -111,10 +142,10 @@ class blogs extends React.Component {
                       </div>
                       <div class="box-blogs">
                         <Row>
-                          <Col md={4}>
+                          <Col md={4} xs={4} sm={4}>
                             <img src={office_3} className="card-ions-blog"/>
                           </Col>
-                          <Col md={8}>
+                          <Col md={8} xs={8} sm={8}>
                             <p className="blog-card-left-header">New Office</p>
                             <p className="blog-card-left-subheader">This is some dummy text for short brief</p>
                             <p className="blog-card-left-date">10:25 PM • 24-03-2022</p>
@@ -123,10 +154,10 @@ class blogs extends React.Component {
                       </div>
                       <div class="box-blogs">
                         <Row>
-                          <Col md={4}>
+                          <Col md={4} xs={4} sm={4}>
                             <img src={office_4} className="card-ions-blog"/>
                           </Col>
-                          <Col md={8}>
+                          <Col md={8} xs={8} sm={8}>
                             <p className="blog-card-left-header">New Office</p>
                             <p className="blog-card-left-subheader">This is some dummy text for short brief</p>
                             <p className="blog-card-left-date">10:25 PM • 24-03-2022</p>
@@ -134,28 +165,6 @@ class blogs extends React.Component {
                         </Row>
                       </div>
                     </div>
-                  </Col>
-                  <Col>
-                  <div className="blogsDiv-inner-2">
-                    <center>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Vj5RmNNxhI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </center>
-                      <div>
-                        <p className="services-top-title">Random Blog Title</p>
-                        <p className="blog-context-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <p className="blog-context-txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <img src={quote_left} style={{height: 40, width: 40}}/>
-                        <Row>
-                          <Col md={1}></Col>
-                          <Col md={11}>
-                            <p className="quote-txt-blogs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since a very long time.</p>
-                          </Col>
-                          <Col md={1}></Col>
-                        </Row>
-                        <img src={quote_right} className="quote-right-img-blogs"/>
-                      </div>
-                    
-                  </div>
                   </Col>
                 </Row>
               </div>

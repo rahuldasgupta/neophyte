@@ -773,19 +773,6 @@ p.txt_.Title.Second {
   float: left;
   margin-top: 2px;
 }
-button.visit-site-about-team {
-  width: 275px;
-  height: 40px;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  font-family: "Poppins";
-  background: rgba(156, 112, 5, 0.8);
-  
-  border-radius: 5px;
-  margin-top: 15px;
-  margin-left: 45%;
-}
 button.requestQuote-senti {
   width: 185px;
   height: 40px;

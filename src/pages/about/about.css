@@ -146,9 +146,8 @@ p.send-mssge {
   }
   p.vision-para{
     text-align: right;
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 5%;
-    font-weight: 500;
     color: #222;
   }
 }
@@ -163,9 +162,8 @@ p.send-mssge {
   }
   p.vision-para{
     text-align: left;
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 5%;
-    font-weight: 500;
     color: #222;
     margin-bottom: 8%;
   }
@@ -835,10 +833,8 @@ button.visit-site-about-team {
   font-weight: 600;
   font-family: "Poppins";
   background: rgba(156, 112, 5, 0.8);
-  
   border-radius: 5px;
-  margin-top: 15px;
-  margin-left: 45%;
+  margin-top: 20px;
 }
 button.visit-site-about {
   width: 160px;
