@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Slide from 'react-reveal/Slide';
 import { BiCheck } from "react-icons/bi";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
@@ -17,9 +16,6 @@ import Select from "react-select";
 import 'react-multi-carousel/lib/styles.css';
 
 //Images
-import heroImage1 from "../../assets/images/GroupCntr2.png";
-import heroImage2 from "../../assets/images/GroupCntr.png";
-import heroImage3 from "../../assets/images/img3rd.png";
 import team from "../../assets/team.png";
 import product from "../../assets/product.png";
 import settings from "../../assets/settings.png";
@@ -94,7 +90,7 @@ class home extends React.Component {
                 <div className="sc-hm-one-in">
                   <Container>
                     <Row className="homAdse-section">
-                      <Col md={6}>
+                      <Col md={6} xs={12} sm={12}>
                         <div className="text-pop">
                           <Fade top>
                             <p className="txt_ Title" id="myElement4">
@@ -115,42 +111,15 @@ class home extends React.Component {
                           </Fade>
                         </div>
                       </Col>
-                      <Col md={6} lg={6}>
-                        <Row>
-                          <Col style={{ textAlign: "center" }} md={6} lg={6}>
-                            <div className="aln-hm-cn">
-                              <Slide top>
-                                <img
-                                  alt="sample"
-                                  src={heroImage1}
-                                  className="entr-gr-one"
-                                />
-                              </Slide>
-                            </div>
-                          </Col>
-                          <Col style={{textAlign: "center",}} md={6} lg={6}>
-                            <div className="aln-itms-cntr">
-                              <Slide top>
-                                <img
-                                  alt="sample"
-                                  src={heroImage2}
-                                  className="entr-gr-two"
-                                />
-                              </Slide>
-                            </div>
-                          </Col>
-                        </Row>
-                        <Col md={6} lg={6}>
-                          <div className="aln-itms-cntr-btm">
-                            <Slide bottom>
-                              <img
-                                alt="sample"
-                                src={heroImage3}
-                                className="entr-gr-three"
-                              />
-                            </Slide>
-                          </div>
-                        </Col>
+                      <Col md={6} lg={6} xs={12} sm={12}>
+                        <div className="iframe-forMobile">
+                            <iframe width="95%" height="240" src="https://www.youtube.com/embed/IMPbKVb8y8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style={{marginBottom:"10%", borderRadius: 20}}></iframe>
+                        </div>
+                        <div className="iframe-forPC">
+                          <center>
+                            <iframe width="100%" height="415" src="https://www.youtube.com/embed/IMPbKVb8y8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style={{marginTop:"15%", marginBottom:"8%", borderRadius: 25}}></iframe>
+                          </center>
+                        </div>
                       </Col>
                     </Row>
                   </Container>

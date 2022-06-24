@@ -76,11 +76,6 @@ p.send-mssge {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .content-box{
-    margin-top: 3%;
-    margin-left: 4%;
-    margin-right: 4%;
-  }
   img.entr-gr-two {
     margin-top: 20px;
     height: 350px;
@@ -841,23 +836,31 @@ p.blog-card-left-header{
   font-family: "Poppins";
   margin-bottom: -2px;
   margin-left: 10px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 p.blog-card-left-subheader{
   font-size: 14px;
   margin-left: 10px;
   margin-bottom: 1px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 p.blog-card-left-date{
   font-size: 11px;
   font-weight: bold;
   margin-left: 10px;
   opacity: 0.6;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 p.header-card-left-date{
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 12.5px;
   opacity: 0.6;
-  line-height: 6px;
+  margin-top: 3%;
 }
 .box-blogs:hover{
   background-color: #d0a02b;
@@ -881,23 +884,6 @@ p.txt_.Title.Second {
   color: #fff;
   float: left;
   margin-top: 2px;
-}
-button.visit-site-about {
-  width: 160px;
-  height: 40px;
-  border-radius: 20px;
-  color: white;
-  font-size: 16px;
-  font-family: "Poppins";
-  background: radial-gradient(
-    214.91% 214.91% at 56.12% 50.88%,
-    #d3ad40 0%,
-    rgba(211, 173, 64, 0) 100%
-  );
-  filter: drop-shadow(5px 10px 7px rgba(255, 243, 243, 0.25));
-  border-radius: 45px;
-  margin-bottom: 17px;
-  margin-top: 6px;
 }
 p.quote-txt-blogs{
   font-size: 20px;
@@ -1339,14 +1325,10 @@ p.services-top-title{
   font-family: "Poppins", sans-serif;
   font-size: 42px !important;
   text-align: left;
-  margin-top: 3%;
+  margin-bottom: 4%;
   word-wrap: break-word;
 }
-.div2{
-  padding-left: 9%;
-  padding-right: 9%;
-  padding-top: 2%;
-}
+
 body{
   scroll-behavior: smooth;
 }

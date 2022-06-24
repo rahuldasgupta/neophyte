@@ -75,11 +75,6 @@ p.send-mssge {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .content-box{
-    margin-top: 3%;
-    margin-left: 4%;
-    margin-right: 4%;
-  }
   img.entr-gr-two {
     margin-top: 20px;
     height: 350px;
@@ -125,9 +120,169 @@ p.send-mssge {
     margin-left:-95px;
     width: 118%;
   }
+  .box-neometryeo{
+    display: block;
+  }
+  .why-us-neo {
+    margin-top: 4%;
+    height: 112vh;
+    background-repeat: no-repeat, repeat;
+    background-position: right top;
+    background: url("../../assets/neo_section.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .neometry_div_1{
+    height: 112vh;
+  }
+  .box-neometry-1 {
+    transition: box-shadow .3s;
+    width: 280px;
+    height: 400px;
+    margin: 50px;
+    border-radius:5px;
+    margin-top: 43%;
+    background-repeat: no-repeat, repeat;
+    background-position: right top;
+    background: url("../../assets/neometry_screen_3.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .neomet-second-right-cards{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(19, 19, 17, 0.8);
+    padding-left: 3%;
+    height: 112vh;
+  }
+  .box-neometry-2 {
+    transition: box-shadow .3s;
+    width: 280px;
+    height: 400px;
+    margin: 50px;
+    border-radius:5px;
+    margin-top: 65%;
+    background-color: #fff;
+  }
+  .explore-next-div{
+    display: block;
+  }
+  .sc-hm-one-products-neo {
+    padding-top: 10%;
+    height: 115vh;
+    background-color: #fff;
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .sc-hm-one-products-neo2 {
+    height: 95vh;
+    background-color: #fff;
+    padding-top: 5%;
+    padding-left: 12%;
+    padding-right: 7%;
+  }
+  .why-us-neo-2{
+    height: 110vh;
+    margin-bottom: 4%;
+    background-color: #d3ad40;
+  }
+  .why-us-neo-2-inner{
+    padding-top: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .neometry_div2_1{
+    background-repeat: no-repeat, repeat;
+    background-position: right top;
+    background: url("../../assets/machine.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 110vh;
+  }
 }
 @media screen and (max-width: 767px) {
   .txt-in {
+    display: none;
+  }
+  .why-us-neo-2-inner{
+    padding-top: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 15%;
+  }
+  .neometry_div2_1{
+    display: none;
+  }
+  .why-us-neo-2{
+    margin-top: 4%;
+    background-color: #d3ad40;
+  }
+  .sc-hm-one-products-neo {
+    padding-top: 10%;
+    background-color: #fff;
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-bottom: 10%;
+  }
+  .sc-hm-one-products-neo2 {
+    background-color: #fff;
+    padding-top: 5%;
+    padding-left: 12%;
+    padding-right: 7%;
+  }
+  .explore-next-div{
+    display: none;
+  }
+  .box-neometry-2 {
+    transition: box-shadow .3s;
+    width: 280px;
+    height: 400px;
+    margin: 50px;
+    border-radius:5px;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    background-color: #fff;
+  }
+  .neomet-second-right-cards{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(19, 19, 17, 0.8);
+  }
+  .box-neometry-1 {
+    transition: box-shadow .3s;
+    width: 280px;
+    height: 400px;
+    margin: 50px;
+    border-radius:5px;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    background-repeat: no-repeat, repeat;
+    background-position: right top;
+    background: url("../../assets/neometry_screen_3.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .why-us-neo {
+    margin-top: 4%;
+    background-repeat: no-repeat, repeat;
+    background-position: right top;
+    background: url("../../assets/neo_section.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .box-neometry{
     display: none;
   }
   #myElement3 {
@@ -515,65 +670,15 @@ p.choosePayment {
   margin-right: 6%;
   margin-bottom: 5%;
 }
-.sc-hm-one-products-neo {
-  padding-top: 10%;
-  height: 115vh;
-  background-color: #fff;
-  padding-top: 5%;
-  padding-left: 7%;
-  padding-right: 7%;
-}
-.sc-hm-one-products-neo2 {
-  height: 105vh;
-  background-color: #fff;
-  padding-top: 5%;
-  padding-left: 12%;
-  padding-right: 7%;
-}
 .others{
   background-color: #f9f9f9
 }
-.why-us-neo {
-  margin-top: 4%;
-  height: 112vh;
-  background-color: #f8f8f8;
-}
-.why-us-neo-2{
-  margin-top: 4%;
-  height: 112vh;
-  background-color: #d3ad40;
-}
-.why-us-neo-2-inner{
-  padding-top: 35%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
+
 p.why-us-neo-2-inner-txt{
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 20px;
   text-align: left;
-  font-family: "Poppins", sans-serif;
+  margin-top: 7% !important;
   color: white;
-}
-.neometry_div2_1{
-  background-repeat: no-repeat, repeat;
-  background-position: right top;
-  background: url("../../assets/machine.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 112vh;
-}
-.neometry_div_1{
-  background-repeat: no-repeat, repeat;
-  background-position: right top;
-  background: url("../../assets/neometry_screen_1.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 112vh;
 }
 p.useCase-title{
   margin-top: -10px;
@@ -594,11 +699,6 @@ p.useCase-title{
   height: 180px;
   width: 140px;
   cursor: pointer;
-}
-
-.why-us-info {
-  margin-top: 4%;
-  background-color: #d0a02b;
 }
 .useCases-div{
   height: 95vh;
@@ -790,16 +890,14 @@ button.visit-site {
   margin-top: 10px;
 }
 button.requestSolution {
-  width: "90%";
+  width: 90%;
   height: 40px;
   border-radius: 0px;
   color: white;
   font-size: 16px;
   font-family: "Poppins";
-  margin-top: 10px;
   background: #d0a02b;
-  margin-left: 12%;
-  margin-top: 40%;
+  margin-top: 35%;
 }
 .aln-hm-cn {
   float: right;
@@ -1128,16 +1226,19 @@ h1, h2, h3, h5 {
 }
 .box-text-title-2{
   color:#d0a02b;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 27px;
+  margin-top: 10px;
+  text-align: left !important;
 }
 .box-text-subtitle{
   color:#fff;
-  font-size: 12px;
+  font-size: 15px;
 }
 .box-text-subtitle-2{
   color:#d0a02b;
-  font-size: 13px;
+  font-size: 15px;
+  text-align: left !important;
 }
 .about-midSide-div2-title{
   color:#3b3b3b;
@@ -1256,11 +1357,6 @@ p.services-top-title{
   margin-top: 3%;
   word-wrap: break-word;
 }
-.div2{
-  padding-left: 9%;
-  padding-right: 9%;
-  padding-top: 2%;
-}
 body{
   scroll-behavior: smooth;
 }
@@ -1270,7 +1366,6 @@ body{
   overflow: hidden;
   width: 100%;
   height: 99vh;
-  background: url(https://designsupply-web.com/samplecontent/vender/codepen/20181014.png) no-repeat center center/cover;
 }
 video {
   min-width: 100%;
@@ -1310,48 +1405,14 @@ video {
   border-radius:10px;
   border: 1px solid #ccc;
   background: #fff;
-  float: left;
   box-shadow: 0 0 11px rgba(33,33,33,.2); 
   position: absolute;
   margin-top: -300px;
-  margin-left: 280px;
+  margin-left: 21%;
   padding-left: 15px;
   padding-right: 10px;
   padding-top: 30px;
   padding-bottom: 50px;
-}
-.box-neometry-1 {
-  transition: box-shadow .3s;
-  width: 280px;
-  height: 400px;
-  margin: 50px;
-  border-radius:5px;
-  float: left;
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
-  position: absolute;
-  margin-top: 200px;
-  margin-left: 280px;
-  background-repeat: no-repeat, repeat;
-  background-position: right top;
-  background: url("../../assets/neometry_screen_3.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.box-neometry-2 {
-  transition: box-shadow .3s;
-  width: 280px;
-  height: 330px;
-  margin: 50px;
-  border-radius:5px;
-  border: 1px solid #ccc;
-  background: #fff;
-  float: left;
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
-  position: absolute;
-  margin-top: 200px;
-  margin-left: 150px;
 }
 .box-neometry-1-inner{
   top: 0;
@@ -1359,22 +1420,12 @@ video {
   width: 100%;
   height: 100%;
   background-color: rgb(19, 19, 17, 0.8);
-  padding-left: 13px;
-  padding-bottom: 3%;
-  padding-left: 15px;
-  padding-right: 10px;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding: 10%;
 }
 .box-neometry-2-inner{
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  padding-left: 20px;
-  padding-right: 15px;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding: 10%;
 }
 
 
@@ -1629,10 +1680,9 @@ video {
 }
 
 .explore-next-div{
-  margin-top: 100vh !important;
-  margin-left: 30%;
-  width: 280px;
-  position: absolute;
+  margin-top: -350px;
+  margin-right: 5%;
+  float: right !important;
 }
 p.explore-more-txt{
   color: #d0a02b;

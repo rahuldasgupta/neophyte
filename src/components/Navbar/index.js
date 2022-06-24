@@ -5,10 +5,10 @@ import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 import ModalBody from "react-bootstrap/ModalBody";
 import { ToastContainer, toast } from "react-toastify";
-import { Link } from "react-router-dom";
+import { BiArrowBack } from "react-icons/bi";
 import SideBar from "../Sidebar/sidebar";
 import Checkbox from '@mui/material/Checkbox';
-
+import Pulse from 'react-reveal/Pulse';
 import logo from "../../assets/logo.gif";
 import sidebar_icon from "../../assets/icon/sidebar_icon.png";
 import { IoClose } from "react-icons/io5";
@@ -19,6 +19,9 @@ import facebook from "../../assets/facebook.png";
 import twitter from "../../assets/twitter.png";
 import linkedin from "../../assets/linkedin.png";
 import instagram from "../../assets/instagram.png";
+import info from "../../assets/info.png";
+import engineering from "../../assets/engineering.png";
+import wf from "../../assets/wf.png";
 import Layer1 from "../../assets/Layer1.svg";
 import Layer2 from "../../assets/layer2.png";
 import Layer3 from "../../assets/layer3.png";
@@ -34,7 +37,8 @@ class Navbar extends React.Component {
       contactModal: false,
       amiwareModal: false,
       errors: {},
-      introduction: true,
+      amiwareMain: true,
+      introduction: false,
       technology: false,
       workflow: false
     };
@@ -272,77 +276,118 @@ class Navbar extends React.Component {
           size="xl"
         >
           <ModalBody>
-            <div>
-              <Row>
-                <Col md={4}>
-                  <div className="contact-div-first">
-                    <p className="amiware-div1-title">AmiWare</p>
-                    <p className="amiware-div1-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                    <p onClick={() => this.setState({ introduction: true, technology: false, workflow: false })} className={this.state.introduction ? "amiware-links-title-ami-flipped" : "amiware-links-title"}>Introduction</p>
-                    <p onClick={() => this.setState({ introduction: false, technology: true, workflow: false })} className={this.state.technology ? "amiware-links-title-ami-flipped" : "amiware-links-title"}>Technology</p>
-                    <p onClick={() => this.setState({ introduction: false, technology: false, workflow: true })} className={this.state.workflow ? "amiware-links-title-ami-flipped" : "amiware-links-title"}>Work Flow</p>
-                  </div>
-                </Col>
-                <Col md={8}>
-                  <div className="contact-div-second">
-                    <IoClose
-                      size={30}
-                      className="closeIconX"
-                      onClick={() => this.setState({ amiwareModal: false })}
+            {
+              this.state.amiwareMain?
+              <>
+                <IoClose
+                  size={30}
+                  className="closeIconX"
+                  onClick={() => this.setState({ amiwareModal: false })}
+                />
+                <center>
+                  <div className="amiware-modal-inner-div">
+                    <img
+                        src={amiware_logo}
+                        className="amiware_logo-image"
                     />
-                    {
-                      this.state.introduction?
-                      <div className="intro-amiware-view">
-                        <center>
-                          <img
-                              src={amiware_logo}
-                              className="amiware_logo-image"
-                          />
-                        </center>
-                        
-                        <img
-                            src={Layer1}
-                            className="layer1-img"
-                        />
-                        <p className="layer1-txt">AmIware improves <span className="amiware-hightlight">Process Visibilty and Automation Management</span> for supply chain ecosystems with intelligent Ambient Machines, leading to minimal people-induced losses and product-linked costs.</p>
-                      </div>
-                      :
-                      <></>
-                    }
-                    {
-                      this.state.technology?
-                        <div className="intro-amiware-view2">
-                          <img
-                              src={Layer2}
-                              className="layer2-img"
-                          />
-                        </div>
-                      :
-                      <></>
-                    }
-                    {
-                      this.state.workflow?
-                        <div className="intro-amiware-view">
-                          <center>
-                            <img
-                                src={amiware_logo}
-                                className="amiware_logo-image"
-                            />
-                          </center>
-                          <p className="layer1-txt">Our <span className="amiware-hightlight">context and task aware engine - AmiWare</span>, Connets with the existing IoT Infrasture & transform them into intelligent Ambient Machines each performing three fundamental operations - Sense, Process and Interact.</p>
-                          <p className="layer1-txt">AmiWare ensures end-to-end monitoring and reporting of processess & sub-processes within the warehouse floor by enabling collaborative HCI between <span className="amiware-hightlight">Ambient Machines</span> and<span className="amiware-hightlight"> Ambient Agents</span> (or workers)</p>
-                          <img
-                              src={Layer3}
-                              className="layer3-img"
-                          />
-                        </div>
-                      :
-                      <></>
-                    }
+                    <p className="layer1-txt">AmIware improves <span className="amiware-hightlight">Process Visibilty and Automation Management</span> for supply chain ecosystems with intelligent Ambient Machines, leading to minimal people-induced losses and product-linked costs.</p>
+                    <Pulse top duration={500}>
+                      <Row>
+                        <Col md={4} sm={4} xs={4}>
+                          <div class="box-amiware-main" onClick={() => this.setState({ introduction: true, technology: false, workflow: false, amiwareMain: false })}>
+                            <img src={info} style={{height: 45, width: 45, marginBottom:"10%"}}/>
+                            <p className="box-amiware-main-txt">Introduction to AmIware</p>
+                          </div>
+                        </Col>
+                        <Col md={4} sm={4} xs={4}>
+                          <div class="box-amiware-main" onClick={() => this.setState({ introduction: false, technology: false, workflow: true, amiwareMain: false })}>
+                            <img src={engineering} style={{height: 55, width: 55, marginBottom:"10%"}}/>
+                            <p className="box-amiware-main-txt">Work<br></br>Flow</p>
+                          </div>
+                        </Col>
+                        <Col md={4} sm={4} xs={4}>
+                          <div class="box-amiware-main" onClick={() => this.setState({ introduction: false, technology: true, workflow: false, amiwareMain: false })}>
+                            <img src={wf} style={{height: 55, width: 55, marginBottom:"10%"}}/>
+                            <p className="box-amiware-main-txt">Technology<br></br>Behind</p>
+                          </div>
+                        </Col>
+                      </Row>
+                    </Pulse>
                   </div>
-                </Col>
-              </Row>
-            </div>
+                </center>
+              </>
+              :
+              <></>
+            }
+            {
+              this.state.workflow?
+                <>
+                  <BiArrowBack
+                    size={30}
+                    className="closeIconBack"
+                    onClick={() => this.setState({ amiwareMain: true,  introduction: false, technology: false, workflow: false,})}
+                  />
+                  <div className="intro-amiware-view">
+                      <center>
+                        <img
+                            src={amiware_logo}
+                            className="amiware_logo-image-small"
+                        />
+                      </center>
+                      <img
+                          src={Layer1}
+                          className="layer1-img"
+                      />
+                      <p className="layer1-txt-inner">AmIware improves <span className="amiware-hightlight">Process Visibilty and Automation Management</span> for supply chain ecosystems with intelligent Ambient Machines, leading to minimal people-induced losses and product-linked costs.</p>
+                  </div>
+                </>
+              :
+                <></>
+            }
+            {
+              this.state.technology?
+                <>
+                  <BiArrowBack
+                    size={30}
+                    className="closeIconBack"
+                    onClick={() => this.setState({ amiwareMain: true,  introduction: false, technology: false, workflow: false,})}
+                  />
+                  <div className="intro-amiware-view2">
+                      <img
+                          src={Layer2}
+                          className="layer2-img"
+                      />
+                  </div> 
+                </>
+              :
+                <></>
+            }
+            {
+              this.state.introduction?
+              <>
+                <BiArrowBack
+                  size={30}
+                  className="closeIconBack"
+                  onClick={() => this.setState({ amiwareMain: true,  introduction: false, technology: false, workflow: false,})}
+                />
+                <div className="intro-amiware-view">
+                    <center>
+                      <img
+                          src={amiware_logo}
+                          className="amiware_logo-image-small"
+                      />
+                    </center>
+                    <p className="layer1-txt-inner">Our <span className="amiware-hightlight">context and task aware engine - AmiWare</span>, Connets with the existing IoT Infrasture & transform them into intelligent Ambient Machines each performing three fundamental operations - Sense, Process and Interact.</p>
+                    <p className="layer1-txt-inner">AmiWare ensures end-to-end monitoring and reporting of processess & sub-processes within the warehouse floor by enabling collaborative HCI between <span className="amiware-hightlight">Ambient Machines</span> and<span className="amiware-hightlight"> Ambient Agents</span> (or workers)</p>
+                    <img
+                        src={Layer3}
+                        className="layer3-img"
+                    />
+                </div>
+              </>
+              :
+              <></>
+            }
           </ModalBody>
         </Modal>
         <Nav>
@@ -355,9 +400,9 @@ class Navbar extends React.Component {
                 </Col>
                 <Col>
                   <IoClose
-                      style={{marginLeft: -80,}}
-                      size={25}
-                      className="closeIcon"
+                      style={{marginLeft: -25}}
+                      size={30}
+                      className="closeIconSidebar"
                       onClick={() => this.setState({ sideBar: false })}
                     />
                 </Col>

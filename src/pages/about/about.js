@@ -6,7 +6,6 @@ import Footer from "../../components/Footer/footer";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import { FaRegBuilding } from "react-icons/fa";
 import { AiOutlineSetting, AiOutlineSafety } from "react-icons/ai";
@@ -106,8 +105,8 @@ class about extends React.Component {
                 <div>
                   <Fade top duration={1250}>
                     <p className="services-top-title">Our startup story</p>
-                    <p>NeoPhyte is an EmTech (Computer Vision/AI/ML, IoT) focussed startup developing Ambient Intelligent Platform & Products/Solutions to create affordable and high-performance automation environments, especially in supply chain management for Industry 4.0. In regard to Warehouse, our company deals with some niche problem areas, bottlenecks, and domain-specific use-cases of the supply chain ecosystem.</p>
-                    <p>This is achieved through on-the-edge deployment of intelligent IoT devices & services which integrate with the tools (WMS, AS/RS) which are already in use within the warehouse environment & make Key Performance Indices (KPIs) monitoring, improvement, and anomaly detection highly data-driven. We also heavily leverage emerging technologies like AI/ML/CV etc, as required, for enhancing the effectiveness of the solutions.</p>
+                    <p className="startup-story-txt">NeoPhyte is an EmTech (Computer Vision/AI/ML, IoT) focussed startup developing Ambient Intelligent Platform & Products/Solutions to create affordable and high-performance automation environments, especially in supply chain management for Industry 4.0. In regard to Warehouse, our company deals with some niche problem areas, bottlenecks, and domain-specific use-cases of the supply chain ecosystem.</p>
+                    <p className="startup-story-txt">This is achieved through on-the-edge deployment of intelligent IoT devices & services which integrate with the tools (WMS, AS/RS) which are already in use within the warehouse environment & make Key Performance Indices (KPIs) monitoring, improvement, and anomaly detection highly data-driven. We also heavily leverage emerging technologies like AI/ML/CV etc, as required, for enhancing the effectiveness of the solutions.</p>
                     <img src={quote_left} style={{height: 70, width: 70}}/>
                     <Row>
                       <Col md={1}></Col>
@@ -117,7 +116,7 @@ class about extends React.Component {
                       <Col md={1}></Col>
                     </Row>
                     <img src={quote_right} className="quote-right-img"/>
-                    <img src={signature} style={{width: 170, height: 50, marginLeft:"9%"}}/>
+                    <img src={signature} style={{width: 170, height: 50, marginLeft:"9%", marginTop:"1%"}}/>
                   </Fade>
                 </div>
               </div>

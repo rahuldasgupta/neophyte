@@ -71,12 +71,7 @@ p.send-mssge {
   color: #ba7105;
   text-align: center;
 }
-.content-box-sentinel{
-  height: 110vh;
-  margin-top: 3%;
-  margin-left: 4%;
-  margin-right: 4%;
-}
+
 @media only screen and (min-width: 768px) {
   .form-container {
     padding-left: 20px;
@@ -122,9 +117,155 @@ p.send-mssge {
     margin-left:-95px;
     width: 118%;
   }
+  .senti-hover-card{
+    margin-left: 22%;
+    margin-top: 5%;
+    display: block;
+  }
+  .senti-hover-card2{
+    margin-left: 17%;
+    margin-top: 5%;
+    display: block;
+  }
+  .content-box-sentinel{
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 4.5%;
+    height: 100vh;
+  }
+  .senti-dash{
+    background: #d3ad40;
+    height: 110vh;
+    width: 100vw;
+    padding-top: 5.5%;
+  }
+  p.txt_products-senti-2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 44px !important;
+    text-align: center;
+    color: #fff !important;
+    padding-bottom: 2.5%;
+  }
+  p.txt_products-senti-3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 44px !important;
+    text-align: center;
+    color: #222 !important;
+    padding-bottom: 2.5%;
+    margin-top: 4%;
+  }
+  .sc-hm-one-products-senti2 {
+    height: 130vh !important;
+    background-color: #fff;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 3%;
+  }
+  .sentinel-card-for-mobile{
+    display: none;
+  }
+  .senti-dashboard{
+    width: 70vw;
+    object-fit: fit;
+    border-radius: 15px !important;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px rgb(74 63 63 / 25%);
+  }
+  .senti-dashboard2{
+    width: 54vw;
+    object-fit: fit;
+    border-radius: 15px !important;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px rgb(74 63 63 / 25%);
+    background: #fff;
+    padding: 18px;
+  }
+  .badge-txt-yellow{
+    color:#d0a02b;
+    font-size: 12.5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 4.5%;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 767px) {
   .txt-in {
+    display: none;
+  }
+  .badge-txt-yellow{
+    color:#d0a02b;
+    font-size: 12.5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  .senti-dashboard{
+    width: 85vw;
+    object-fit: fit;
+    border-radius: 15px !important;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px rgb(74 63 63 / 25%);
+  }
+  .senti-dashboard2{
+    width: 80vw;
+    object-fit: fit;
+    border-radius: 15px !important;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px rgb(74 63 63 / 25%);
+    background: #fff;
+    padding: 18px;
+  }
+  p.txt_products-senti-2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px !important;
+    text-align: center;
+    color: #fff !important;
+    padding-bottom: 3%;
+  }
+  .sentinel-card-for-mobile{
+    display: block;
+  }
+  p.txt_products-senti-3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px !important;
+    text-align: center;
+    color: #222 !important;
+    padding-bottom: 3%;
+    margin-top: 10%;
+  }
+  .sc-hm-one-products-senti2 {
+    height: 100%;
+    background-color: #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 3%;
+    margin-bottom: 12%;
+  }
+  .content-box-sentinel{
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 4.5%;
+    margin-bottom:9%;
+  }
+  .senti-dash{
+    background: #d3ad40;
+    width: 100vw;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+  }
+  .senti-hover-card{
+    display: none;
+  }
+  .senti-hover-card2{
     display: none;
   }
   #myElement3 {
@@ -522,17 +663,9 @@ p.choosePayment {
   margin-left: 5%;
   margin-right: 15%;
 }
-.sc-hm-one-products-senti2 {
-  height: 130vh !important;
-  background-color: #fff;
-  margin-left: 7%;
-  margin-right: 7%;
-  padding-top: 3%;
-}
 .others{
   background-color: #f9f9f9
 }
-
 .warehouse-img-2{
   height: 90vh;
   object-fit:fill;
@@ -670,13 +803,6 @@ p.txt_products-senti {
   line-height: 60px;
   text-align: right;
 }
-p.txt_products-senti-2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 44px !important;
-  text-align: center;
-  color: #fff !important;
-  padding-bottom: 2.5%;
-}
 p.txt-title-modal {
   color: #193f6a;
   font-size: 28px;
@@ -784,23 +910,6 @@ button.requestQuote-senti {
   background: #d0a02b;
   margin-left: 57%;
 }
-button.visit-site-about {
-  width: 160px;
-  height: 40px;
-  border-radius: 20px;
-  color: white;
-  font-size: 16px;
-  font-family: "Poppins";
-  background: radial-gradient(
-    214.91% 214.91% at 56.12% 50.88%,
-    #d3ad40 0%,
-    rgba(211, 173, 64, 0) 100%
-  );
-  filter: drop-shadow(5px 10px 7px rgba(255, 243, 243, 0.25));
-  border-radius: 45px;
-  margin-bottom: 17px;
-  margin-top: 6px;
-}
 p.quote-txt{
   font-size: 25px;
   font-family: "Poppins", sans-serif;
@@ -815,14 +924,6 @@ p.quote-txt{
   margin-top: -25px;
   margin-left: 92px;
 }
-.quote-right-img{
-  height: 70px;
-  width: 70px;
-  float: right;
-  margin-top: -35px;
-
-}
-
 .container-cmmon {
   padding-left: 12px;
   padding-right: 12px;
@@ -1121,30 +1222,6 @@ p.team-text-title{
   border-radius: 5px;
   margin-top: 12%;
 }
-.senti-dashboard{
-  width: 70vw;
-  object-fit: fit;
-  border-radius: 15px !important;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  box-shadow: 0px 5px 5px rgb(74 63 63 / 25%);
-}
-.senti-dashboard2{
-  width: 54vw;
-  object-fit: fit;
-  border-radius: 15px !important;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  box-shadow: 0px 5px 5px rgb(74 63 63 / 25%);
-  background: #fff;
-  padding: 18px;
-}
-.senti-dash{
-  background: #d3ad40;
-  height: 110vh;
-  width: 100vw;
-  padding-top: 4%;
-}
 .about-midSide-div2{
   color:#d0a02b;
   font-weight: 600;
@@ -1199,14 +1276,6 @@ p.team-text-title{
 }
 .badge-txt{
   color:#fff;
-  font-size: 12.5px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  margin-top: 4.5%;
-  text-align: center;
-}
-.badge-txt-yellow{
-  color:#d0a02b;
   font-size: 12.5px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -1286,11 +1355,6 @@ p.services-top-title{
   text-align: left;
   margin-top: 3%;
   word-wrap: break-word;
-}
-.div2{
-  padding-left: 9%;
-  padding-right: 9%;
-  padding-top: 2%;
 }
 body{
   scroll-behavior: smooth;

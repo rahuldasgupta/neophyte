@@ -84,19 +84,15 @@ p.send-mssge {
     margin-top: 10px;
     margin-top: 23%;
     padding-left: 10%;
+    padding-right: 8%;
     font-family: "Poppins", sans-serif;
   }
   .why-midSide-div2-para{
     color:#fff;
-    font-size: 15px;
-    margin-top: -5px;
+    font-size: 17px;
     padding-left: 10%;
+    padding-right: 8%;
     font-family: "Poppins", sans-serif;
-  }
-  .content-box{
-    margin-top: 3%;
-    margin-left: 4%;
-    margin-right: 4%;
   }
   img.entr-gr-two {
     margin-top: 20px;
@@ -150,6 +146,12 @@ p.send-mssge {
     object-fit: cover;
     border-radius: 5px;
   }
+  .stock_img-final-card{
+    height: 500px;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
   button.requestQuote {
     width: 185px;
     height: 40px;
@@ -175,7 +177,7 @@ p.send-mssge {
     padding-right: 7%;
   }
   .sc-hm-one-products-home2 {
-    height: 105vh;
+    height: 100vh;
     background-color: #fff;
     padding-top: 2%;
     padding-left: 12%;
@@ -207,7 +209,7 @@ p.send-mssge {
     background: #d0a02b;
     border-radius: 10px;
     height: 89.7vh !important;
-    padding-left: 10% !important;
+    padding-left: 13% !important;
     padding-top: 13%;
   }
   .sc-hm-one-contact {
@@ -225,14 +227,31 @@ p.send-mssge {
     padding-left: 18%;
     padding-right: 18%;
   }
+  .why-us-contact{
+    padding: 0px;
+    height: 110vh;
+    background-color: #d0a02b;
+  }
+  .why-us-info {
+    margin-top: 4%;
+    background-color: #d0a02b;
+  }
 }
 @media screen and (max-width: 767px) {
   .txt-in {
     display: none;
   }
+  .why-us-info {
+    background-color: #d0a02b;
+  }
+  .why-us-contact{
+    padding: 0px;
+    height: 100%;
+    background-color: #d0a02b;
+  }
   .why-us {
-    margin-top: 4%;
-    height: 100vh;
+    margin-top: 5%;
+    padding-bottom: 9%;
     background-color: #d0a02b;
   }
   .home-contact-inner{
@@ -290,8 +309,7 @@ p.send-mssge {
     color:#fff;
     font-weight: 600;
     font-size: 40px;
-    margin-top: 10px;
-    margin-top: 23%;
+    margin-top: 10%;
     padding-left: 7%;
     padding-right: 7%;
     font-family: "Poppins", sans-serif;
@@ -319,6 +337,14 @@ p.send-mssge {
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
+  }
+  .stock_img-final-card{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10%;
+    margin-bottom: 4%;
   }
   #myElement3 {
     display: none;
@@ -793,10 +819,6 @@ p.useCase-title{
   width: 140px;
   cursor: pointer;
 }
-.why-us-info {
-  margin-top: 4%;
-  background-color: #d0a02b;
-}
 .useCases-div{
   height: 95vh;
 }
@@ -870,11 +892,6 @@ p.useCase-title{
   font-family: "Poppins", sans-serif;
   color: #d4943f;
 }
-.why-us-contact{
-  padding: 0px;
-  height: 110vh;
-  background-color: #d0a02b;
-}
 p.txt_.Title {
   color: white !important;
   font-family: "Poppins", sans-serif !important;
@@ -894,7 +911,7 @@ p.txt_products {
 }
 p.product-subTitle{
   color: #4B4B4B;
-  font-size: 15.5px;
+  font-size: 16.6px;
   text-align: center;
   margin-top: -10px;
 }
@@ -1344,8 +1361,7 @@ h1, h2, h3, h5 {
 }
 .about-midSide-div2-para{
   color:#3C3C3C;
-  font-size: 14px;
-  margin-top: -5px;
+  font-size: 16px;
 }
 .play_img{
   position:absolute;
@@ -1457,11 +1473,6 @@ p.services-top-title{
   text-align: left;
   margin-top: 3%;
   word-wrap: break-word;
-}
-.div2{
-  padding-left: 9%;
-  padding-right: 9%;
-  padding-top: 2%;
 }
 body{
   scroll-behavior: smooth;
